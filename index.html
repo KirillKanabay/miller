@@ -1,13 +1,969 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/mobile-menu-style.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Miller</title>
 </head>
+
 <body>
-    <h1>Miller</h1>
+    <nav id="menu-mobile" class="menu-mobile hidden">
+        <header class="menu-mobile__header">
+            <a href="#">
+                <img class="logo" src="images/logo.png" alt="Логотип Miller">
+            </a>
+            <button id="close-menu-mobile-button" class="menu-mobile__close-button transparent-button">
+                <img src="images/close_icon.svg" alt="Закрыть меню">
+            </button>
+        </header>
+        <ul class="menu-mobile__list">
+            <li class="menu-mobile__item">
+                <a href="#" class="menu-mobile__link">
+                    Каталог товаров
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a href="#" class="menu-mobile__link">
+                    Блог
+                </a>
+            </li>
+            <li class="menu-mobile__item">
+                <a href="#" class="menu-mobile__link">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+        <ul class="menu-mobile__list menu-icon__list">
+            <li class="menu-item menu-icon__item">
+                <a href="#" class="menu-mobile__link">
+                    <img src="images/basket_icon.svg" alt="Корзина">
+                </a>
+            </li>
+            <li class="menu-item menu-icon__container__item">
+                <a href="#" class="menu-mobile__link">
+                    <img src="images/user_icon.svg" alt="Личный кабинет">
+                </a>
+            </li>
+        </ul>
+        <footer class="menu-mobile__footer">
+            <a class="menu-mobile__email" href="mailto:Import@kldrefine.com">Import@kldrefine.com</a>
+            <ul class="menu-mobile__list social-menu__list">
+                <li class="menu-mobile__item social-menu__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img src="images/phone_icon.svg" alt="Телефон">
+                    </a>
+                </li>
+                <li class="menu-mobile__item social-menu__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img src="images/instagram_icon.svg" alt="Instagram">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </nav>
+    <header class="header">
+        <div class="header-container">
+            <button class="transparent-button" id="open-menu-mobile-button">
+                <img src="images/burger_icon.svg" alt="Иконка бургер-меню">
+            </button>
+            <img src="images/logo.svg" alt="Логотип Miller">
+        </div>
+        <div class="header-container">
+            <ul class="header-link-list">
+                <li class="header-link-item">
+                    <a class="header-link" href="#">
+                        <img src="images/search_icon.svg" alt="Иконка поиска">
+                    </a>
+                </li>
+                <li class="header-link-item">
+                    <a class="header-link" href="#">
+                        <img src="images/basket_icon.svg" alt="Иконка поиска">
+                    </a>
+                </li>
+                <li class="header-link-item">
+                    <a class="header-link" href="#">
+                        <img src="images/user_icon.svg" alt="Иконка поиска">
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+    <main>
+        <section class="intro-section">
+            <div class="slider">
+                <div class="slide slide-1 slide-intro">
+                    <h2 class="intro-section-title">Свежеобжаренный кофе</h2>
+                    <p class="intro-section-description">
+                        Кофе Калининградской обжарки
+                        из разных стран произрастания
+                        с доставкой на дом.
+                    </p>
+                    <p class="intro-section-description intro-section-description-coffee">
+                        Мы обжариваем кофе
+                        <b>каждые выходные.</b>
+                    </p>
+                    <img class="intro-section-image" src="./images/coffee-espresso.png" alt="Кофе эспрессо">
+                </div>
+            </div>
+            <p class="slider-inputs">
+                <label>
+                    <input class="slide-input" type="radio" name="intro-slide" id="intro-slide-1" checked>
+                    <span>slide-1</span>
+                </label>
+                <label>
+                    <input class="slide-input" type="radio" name="intro-slide" id="intro-slide-2">
+                    <span>slide-2</span>
+                </label>
+                <label>
+                    <input class="slide-input" type="radio" name="intro-slide" id="intro-slide-2">
+                    <span>slide-3</span>
+                </label>
+            </p>
+
+            <a class="button full-catalog-button" href="#">Посмотреть каталог</a>
+        </section>
+        <section class="catalog-section">
+            <h2 class="section-title catalog-section-title">Каталоги нашей продукции</h2>
+            <div class=carousel-container>
+                <div class="carousel-catalog carousel">
+                    <div class="carousel-item slide-catalog slide-catalog-current">
+                        <img class="slide-catalog-image" src="./images/catalog/coffee.png" alt="Кофе эспрессо">
+                        <h3 class="slide-catalog-title">Свежеобжаренный кофе</h2>
+                            <a class="button slide-catalog-button" href="#">Купить</a>
+                    </div>
+                    <div class="carousel-item slide-catalog">
+                        <img class="slide-catalog-image" src="./images/catalog/teapot.png" alt="Чай и кофейные напитки">
+                        <h3 class="slide-catalog-title">Чай и кофейные напитки</h2>
+                            <a class="button slide-catalog-button" href="#">Купить</a>
+                    </div>
+                    <div class="carousel-item slide-catalog">
+                        <img class="slide-catalog-image" src="./images/catalog/vending.png" alt="Вендинг">
+                        <h3 class="slide-catalog-title">Продукция для вендинга</h2>
+                            <a class="button slide-catalog-button" href="#">Купить</a>
+                    </div>
+                    <div class="carousel-item slide-catalog">
+                        <img class="slide-catalog-image" src="./images/catalog/pp.png" alt="Здоровое питание">
+                        <h3 class="slide-catalog-title">Здоровое питание</h2>
+                            <a class="button slide-catalog-button" href="#">Купить</a>
+                    </div>
+                </div>
+
+                <p class="slider-inputs carousel-catalog-inputs">
+                    <label>
+                        <input class="slide-input" type="radio" name="intro-slide" id="intro-slide-1" checked>
+                        <span>slide-1</span>
+                    </label>
+                    <label>
+                        <input class="slide-input" type="radio" name="intro-slide" id="intro-slide-2">
+                        <span>slide-2</span>
+                    </label>
+                    <label>
+                        <input class="slide-input" type="radio" name="intro-slide" id="intro-slide-2">
+                        <span>slide-3</span>
+                    </label>
+                    <label>
+                        <input class="slide-input" type="radio" name="intro-slide" id="intro-slide-2">
+                        <span>slide-4</span>
+                    </label>
+                </p>
+            </div>
+        </section>
+        <section class="discount-section">
+            <h2 class="section-title discount-section-title">Товары со скидкой</h2>
+            <p class="discount-section-description">
+                Наша компания предлагает покупать товар со скидкой не только в дни распродаж или в течение действия
+                ограниченных предложений,
+                но и пользоваться скидками постоянно!
+            </p>
+            <ul class="discount-items">
+                <li class="discount-item">
+                    <i class="percent-icon"><span>%</span></i>
+                    <span class="discount-span">Скидки</span>
+                    <select class="select weight-select" name="weight" id="item-weight-1">
+                        <option value="250 г.">250 г.</option>
+                        <option value="500 г.">500 г</option>
+                        <option value="750 г.">750 г.</option>
+                        <option value="1000 г.">1000 г.</option>
+                    </select>
+                    <div class="discount-item-container">
+                        <img class="discount-item-image" src="images/discount/colombia_supremo.png"
+                            alt="Colombia supremo">
+                        <div class="rating-container">
+                            <div class="stars-rating">
+                                <ul class="stars-list">
+                                    <li class="star-item star-item-selected">
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="star-item star-item-selected">
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="star-item star-item-selected">
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="star-item star-item-selected">
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="star-item">
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <div class="rating-values">
+                                    <span class="rating-mark">4.0</span>
+                                    <span class="rating-count">(32 отзыва)</span>
+                                </div>
+                            </div>
+                            <div class="roasting-rating">
+                                <ul class="roasting-list">
+                                    <li class="roasting-item">
+                                        <svg width="12" height="12" viewBox="0 0 12 12"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="roasting-item">
+                                        <svg width="12" height="12" viewBox="0 0 12 12"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="roasting-item">
+                                        <svg width="12" height="12" viewBox="0 0 12 12"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="roasting-item">
+                                        <svg width="12" height="12" viewBox="0 0 12 12"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="roasting-item">
+                                        <svg width="12" height="12" viewBox="0 0 12 12"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="titled-rating-list">
+                                <li class="titled-rating-item">
+                                    <div class="titled-rating">
+                                        <span class="rating-title">Кислинка</span>
+                                        <ul class="circles-list">
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="titled-rating-item">
+                                    <div class="titled-rating">
+                                        <span class="rating-title">Горчинка</span>
+                                        <ul class="circles-list">
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="titled-rating-item">
+                                    <div class="titled-rating">
+                                        <span class="rating-title">Насыщенность</span>
+                                        <ul class="circles-list">
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="discount-item-title">Colombia Supremo</h3>
+                    <p class="discount-item-description">Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                    <footer class="discount-item-footer">
+                        <div class="discount-item-price">
+                            <s class="old-price">350 ₽</s>
+                            <span class="discount-price">250 ₽</span>
+                        </div>
+                        <button class="button to-basket-button">В корзину</button>
+                    </footer>
+                </li>
+                <li class="discount-item">
+                    <i class="percent-icon"><span>%</span></i>
+                    <span class="discount-span">Скидки</span>
+                    <select class="select weight-select" name="weight" id="item-weight-1">
+                        <option value="250 г.">250 г.</option>
+                        <option value="500 г.">500 г</option>
+                        <option value="750 г.">750 г.</option>
+                        <option value="1000 г.">1000 г.</option>
+                    </select>
+                    <div class="discount-item-container">
+                        <img class="discount-item-image" src="images/discount/colombia_supremo.png"
+                            alt="Colombia supremo">
+                        <div class="rating-container">
+                            <div class="stars-rating">
+                                <ul class="stars-list">
+                                    <li class="star-item star-item-selected">
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="star-item star-item-selected">
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="star-item star-item-selected">
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="star-item star-item-selected">
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="star-item">
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <div class="rating-values">
+                                    <span class="rating-mark">4.0</span>
+                                    <span class="rating-count">(32 отзыва)</span>
+                                </div>
+                            </div>
+                            <div class="roasting-rating">
+                                <ul class="roasting-list">
+                                    <li class="roasting-item">
+                                        <svg width="12" height="12" viewBox="0 0 12 12"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="roasting-item">
+                                        <svg width="12" height="12" viewBox="0 0 12 12"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="roasting-item">
+                                        <svg width="12" height="12" viewBox="0 0 12 12"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="roasting-item">
+                                        <svg width="12" height="12" viewBox="0 0 12 12"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="roasting-item">
+                                        <svg width="12" height="12" viewBox="0 0 12 12"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="titled-rating-list">
+                                <li class="titled-rating-item">
+                                    <div class="titled-rating">
+                                        <span class="rating-title">Кислинка</span>
+                                        <ul class="circles-list">
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="titled-rating-item">
+                                    <div class="titled-rating">
+                                        <span class="rating-title">Горчинка</span>
+                                        <ul class="circles-list">
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="titled-rating-item">
+                                    <div class="titled-rating">
+                                        <span class="rating-title">Насыщенность</span>
+                                        <ul class="circles-list">
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item circle-item-selected">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                            <li class="circle-item">
+                                                <svg width="6" height="6" viewBox="0 0 6 6"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="3" cy="3" r="3" />
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="discount-item-title">Colombia Supremo</h3>
+                    <p class="discount-item-description">Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                    <footer class="discount-item-footer">
+                        <div class="discount-item-price">
+                            <s class="old-price">350 ₽</s>
+                            <span class="discount-price">250 ₽</span>
+                        </div>
+                        <button class="button to-basket-button">В корзину</button>
+                    </footer>
+                </li>
+            </ul>
+        </section>
+        <section class="advantages-section">
+            <h2 class="section-title advantages-title">
+                Почему стоит работать именно с нами?
+            </h2>
+            <ul class="advantages-list">
+                <li class="advantages-item">
+                    <div class="advantages-item-icon-container">
+                        <img class="advantages-item-icon" src="./images/advantages/coffee.svg"
+                            alt="Иконка консультаций">
+                    </div>
+                    <div class="advantages-item-container">
+                        <h3 class="advantages-item-title">
+                            Всегда свежая обжарка
+                        </h3>
+                        <p class="advantages-item-description">
+                            Подбор степени обжарки под каждый сорт кофе. Всегда свежая обжарка
+                        </p>
+                    </div>
+                </li>
+                <li class="advantages-item">
+                    <div class="advantages-item-icon-container">
+                        <img class="advantages-item-icon" src="./images/advantages/discount.svg"
+                            alt="Иконка консультаций">
+                    </div>
+                    <div class="advantages-item-container">
+                        <h3 class="advantages-item-title">
+                            Лучшие цены на продукцию
+                        </h3>
+                        <p class="advantages-item-description">
+                            Благодаря крупным объемам производства
+                            мы даем лучшие цены на нашу продукцию
+                        </p>
+                    </div>
+                </li>
+                <li class="advantages-item">
+                    <div class="advantages-item-icon-container">
+                        <img class="advantages-item-icon" src="images/advantages/support.svg" alt="Иконка консультаций">
+                    </div>
+                    <div class="advantages-item-container">
+                        <h3 class="advantages-item-title">
+                            Консультации 24/7
+                        </h3>
+                        <p class="advantages-item-description">
+                            Наши специалисты готовы всегда помочь
+                            и подсказать вам с выбором кофе
+                            или другой продукции.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="roasting-section">
+            <h2 class="section-title roasting-section-title">
+                Как мы обжариваем наш кофе:
+            </h2>
+            <p class="roasting-section-description">
+                Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве.
+                Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое
+                оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой
+                продукции. </p>
+            <p class="roasting-section-description">
+                Кофе поставляется в контейнерах напрямую с плантаций
+                по всему миру. Компания имеет долгосрочные контракты
+                по поставке продукции. Каждая партия проходит строгий контроль на заводе для проверки зерна. Зеленое
+                зерно обжаривается, проходит процесс дегазации
+                и тут же отправляется клиентам. Наши обжарщики прошли обучение в России и за рубежом. У нас свой подход
+                к каждой партии зерна.
+            </p>
+            <p class="roasting-section-description">
+                Мы раскрываем вкус каждого сорта кофе.
+            </p>
+            <a class="button roasting-section-button" href="#">Посмотреть каталог</a>
+        </section>
+        <section class="news-section">
+            <h2 class="section-title">Новости компании</h2>
+            <div class="carousel-inputs">
+                <button id="left-arrow">
+                    <img src="./images/carousel/left-arrow.svg" alt="Left arrow carousel">
+                </button>
+                <button id="right-arrow">
+                    <img src="./images/carousel/right-arrow.svg" alt="Right arrow carousel">
+                </button>
+            </div>
+            <ul class="news-list">
+                <li class="news-item">
+                    <img class="news-preview" src="./images/news/preview.png" alt="Танзанский кофе">
+                    <article class="news-article">
+                        <h3 class="news-title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h3>
+                        <div class="news-paragraphs">
+                            <p class="news-description">Танзания – красивая африканская страна. Именно здесь расположены
+                                легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.</p>
+                            <p class="news-description">Но наш интерес вызван не столько природными красотами, сколько
+                                кофе...</p>
+                        </div>
+                        <a class="news-continue-link" href="#">
+                            <span>Подробнее</span>
+                            <img src="./images/news/link-arrow.svg" alt="Стрелка подробнее">
+                        </a>
+                    </article>
+                </li>
+            </ul>
+            <a class="all-news-link" href="#">Читать все</a>
+        </section>
+        <section class="instagram-section">
+            <h2 class="section-title">Мы в Instagram</h2>
+            <a class="instagram-link" href="#">
+                <img src="./images/instagram_icon.svg" alt="Instagram icon">
+            </a>
+            <ul class="instagram-photo-list">
+                <li class="instagram-photo-item">
+                    <img src="./images/instagram/plug.svg" alt="Фото-заглушка">
+                </li>
+                <li class="instagram-photo-item">
+                    <img src="./images/instagram/plug.svg" alt="Фото-заглушка">
+                </li>
+            </ul>
+            <button id="change-inst-photo-btn">
+                <img src="./images/instagram/arrow.svg" alt="Сменить фотографию">
+            </button>
+        </section>
+        <section class="mailing-section">
+            <img class="mailing-section-image" src="images/cup-and-coffee.png" alt="Кружка эспрессо и кофейные зерна">
+            <h2 class="section-title mailing-section-title">Подписка на новости и рассылку</h2>
+            <p class="mailing-section-description">
+                Подпишитесь на нашу рассылку прямо сейчас
+                и будьте в курсе новых поставок, скидок
+                и эксклюзивных предложений.
+            </p>
+            <form class="mailing-section-form" method="POST">
+                <input class="input" type="email" placeholder="Ваш email">
+                <button type="submit" class="button mailing-section-submit">Подписаться</button>
+            </form>
+            <p class="mailing-section-form-description">
+                Нажимая на кнопку “Подписаться”, вы принимаете правила <a href="link" class="link">пользовательского
+                    соглашения</a>
+            </p>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer-navigation">
+            <ul class="footer-navigation-list">
+                <li class="footer-navigation-item">
+                    <a class="footer-navigation-link" href="#">Каталог товаров</a>
+                </li>
+                <li class="footer-navigation-item">
+                    <a class="footer-navigation-link" href="#">Блог</a>
+                </li>
+                <li class="footer-navigation-item">
+                    <a class="footer-navigation-link" href="#">Каталог</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="footer-logo-link">
+            <img src="/images/logo.png" alt="Логотип Miller">
+        </a>
+    </footer>
+    <script src="scripts/menu-mobile.js"></script>
 </body>
+
 </html>

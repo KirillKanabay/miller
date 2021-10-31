@@ -1,0 +1,32 @@
+@import '../variables.scss';
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 27px 10px 18px;
+    height: 70px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px $dbs;
+
+    &-container{
+        display: flex;
+        align-items: center;
+    }
+
+    &-link-list{
+        display: flex;
+        list-style: none;
+    }
+
+    &-link-item{
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+#open-menu-mobile-button{
+    margin-right: 21px;
+}

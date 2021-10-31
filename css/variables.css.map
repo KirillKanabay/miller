@@ -1,0 +1,1 @@
+{"version":3,"file":"variables.css","sources":["variables.scss"],"sourcesContent":["// Colors\r\n$black: #181818;\r\n$black2: #222222;\r\n$primary: #F9B300;\r\n$light-gray: #F0F0F0;\r\n$grey: #5B5B5B;\r\n$dark-grey: #505050;\r\n$white: #fff;\r\n\r\n// Box shadow\r\n$dbs: rgba(157, 157, 157, 0.25);"],"names":[],"mappings":""}

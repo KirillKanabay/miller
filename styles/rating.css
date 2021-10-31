@@ -1,0 +1,80 @@
+.stars-list,
+.roasting-list,
+.circles-list,
+.titled-rating-list{
+    display: flex;
+    list-style: none;
+}
+
+.star-item{
+    margin-right: 1px;
+    height: 16px;
+}
+
+.roasting-item:last-child,
+.circle-item:last-child,
+.star-item:last-child{
+    margin-right: 0px;
+}
+
+.star-item svg,
+.circle-item svg{
+    fill: var(--light-gray);
+}
+
+.star-item-selected svg,
+.circle-item-selected svg{
+    fill: var(--primary);
+}
+
+.rating-values{
+    margin-top: 4px;
+}
+
+.rating-mark{
+    font-weight: 700;
+    font-size: 12.5px;
+    line-height: 15px;
+}
+
+.rating-count{
+    font-weight: 500;
+    font-size: 8.75px;
+    line-height: 10.3px;
+    color: var(--grey);
+}
+
+.roasting-list{
+    margin-top: 19px;
+    margin-bottom: 18px;
+}
+
+.roasting-item{
+    margin-right: 5px;
+    height: 12px;
+}
+
+.roasting-item svg{
+    fill: var(--dark-grey);
+}
+
+.circle-item{
+    height: 6px;
+    margin-right: 2px;
+}
+
+.rating-title{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 7px;
+}
+
+.titled-rating-list{
+    flex-direction: column;
+}
+
+.titled-rating-item{
+    margin-bottom: 9px;
+}
+

@@ -1,0 +1,95 @@
+* {
+    font-family: "Gilroy", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #181818;
+    --black2: #222222;
+    --primary: #F9B300;
+    --light-gray: #F0F0F0;
+    --grey: #5B5B5B;
+    --dark-grey: #505050;
+}
+
+.hidden {
+    display: none;
+}
+
+.transparent-button {
+    background-color: transparent;
+    border: 0;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 37px;
+}
+
+b {
+    font-weight: 700;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 14px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.select {
+    background-color: #FFF7E1;
+    border: 1px solid #F9B300;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 4px 17px 3px 17px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.to-basket-button {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.51px;
+    width: 111px;
+    height: 30px;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    height: 50px;
+    padding-left: 40px;
+    background: #f3f3f3;
+    border-radius: 5px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.input::placeholder {
+    color: #C9C9C9;
+}
+
+.link{
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
