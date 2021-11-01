@@ -1,0 +1,32 @@
+/* Catalog section */
+.catalog {
+  position: relative;
+  margin-top: 70px; }
+  .catalog__title {
+    margin-left: 18px; }
+  .catalog__carousel {
+    margin-top: 30px; }
+  .catalog__slide {
+    width: 194px;
+    height: 269px;
+    padding: 15px 20px 0px 20px;
+    box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    .catalog__slide--current {
+      padding: 15px 20px 0px 20px; }
+    .catalog__slide__image {
+      width: 50%; }
+    .catalog__slide__title {
+      font-weight: 700;
+      line-height: 22px;
+      font-size: 18px;
+      margin-top: 15px;
+      text-align: center; }
+    .catalog__slide__button {
+      margin: 30px 0; }
+
+/*# sourceMappingURL=catalog.css.map */

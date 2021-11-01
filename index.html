@@ -6,11 +6,14 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/mobile-menu-style.css">
-    <link rel="stylesheet" href="styles/layout.css">
+    <!-- Gilroy font -->
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+
+    <!-- Slick js library (sliders) -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
+
     <title>Miller</title>
 </head>
 
@@ -132,28 +135,29 @@
             <a class="button intro__button" href="#">Посмотреть каталог</a>
         </section>
         <section class="catalog">
-            <h2 class="section-title catalog-title">Каталоги нашей продукции</h2>
+            <h2 class="section-title catalog__title">Каталоги нашей продукции</h2>
             <div class=carousel-container>
-                <div class="carousel-catalog carousel">
-                    <div class="carousel-item slide-catalog slide-catalog-current">
-                        <img class="slide-catalog-image" src="./images/catalog/coffee.png" alt="Кофе эспрессо">
-                        <h3 class="slide-catalog-title">Свежеобжаренный кофе</h2>
-                            <a class="button slide-catalog-button" href="#">Купить</a>
+                <div class="catalog__carousel carousel">
+                    <div class="carousel-item catalog__slide catalog__slide--current">
+                        <img class="catalog__slide__image" src="./images/catalog/coffee.png" alt="Кофе эспрессо">
+                        <h3 class="catalog__slide__title">Свежеобжаренный кофе</h3>
+                        <a class="button catalog__slide__button" href="#">Купить</a>
                     </div>
-                    <div class="carousel-item slide-catalog">
-                        <img class="slide-catalog-image" src="./images/catalog/teapot.png" alt="Чай и кофейные напитки">
-                        <h3 class="slide-catalog-title">Чай и кофейные напитки</h2>
-                            <a class="button slide-catalog-button" href="#">Купить</a>
+                    <div class="carousel-item catalog__slide">
+                        <img class="catalog__slide__image" src="./images/catalog/teapot.png"
+                            alt="Чай и кофейные напитки">
+                        <h3 class="catalog__slide__title">Чай и кофейные напитки</h3>
+                        <a class="button catalog__slide__button" href="#">Купить</a>
                     </div>
-                    <div class="carousel-item slide-catalog">
-                        <img class="slide-catalog-image" src="./images/catalog/vending.png" alt="Вендинг">
-                        <h3 class="slide-catalog-title">Продукция для вендинга</h2>
-                            <a class="button slide-catalog-button" href="#">Купить</a>
+                    <div class="carousel-item catalog__slide">
+                        <img class="catalog__slide__image" src="./images/catalog/vending.png" alt="Вендинг">
+                        <h3 class="catalog__slide__title">Продукция для вендинга</h3>
+                        <a class="button catalog__slide__button" href="#">Купить</a>
                     </div>
-                    <div class="carousel-item slide-catalog">
-                        <img class="slide-catalog-image" src="./images/catalog/pp.png" alt="Здоровое питание">
-                        <h3 class="slide-catalog-title">Здоровое питание</h2>
-                            <a class="button slide-catalog-button" href="#">Купить</a>
+                    <div class="carousel-item catalog__slide">
+                        <img class="catalog__slide__image" src="./images/catalog/pp.png" alt="Здоровое питание">
+                        <h3 class="catalog__slide__title">Здоровое питание</h3>
+                        <a class="button catalog__slide__button" href="#">Купить</a>
                     </div>
                 </div>
 
@@ -964,6 +968,10 @@
         </a>
     </footer>
     <script src="scripts/menu-mobile.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="scripts/slider.js"></script>
 </body>
 
 </html>
