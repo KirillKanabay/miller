@@ -24,3 +24,13 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $('.instagram__photo-list').slick({
+        infinite: true,
+        arrows: true,
+        nextArrow: null,
+        slidesToShow: 2,
+        prevArrow: $('#change-inst-photo-btn'),
+    });
+});
+

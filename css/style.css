@@ -610,6 +610,41 @@ label > input[type="radio"] + * {
     font-size: 12px;
     line-height: 15.6px; }
 
+.instagram {
+  padding: 0 18px;
+  padding-top: 24px;
+  padding-bottom: 65px;
+  background: url(/images/instagram/iphone.png) top 49px right -35px no-repeat, url(/images/instagram/bg-middle.svg) top 110px center no-repeat, url(/images/instagram/bg-bottom.svg) bottom right no-repeat, linear-gradient(to bottom, #FFF7E1 0px, #FFF7E1 50%, #F9B300 50%, #F9B300 87%, #fff 87%, #fff 100%) top center no-repeat; }
+  .instagram__link {
+    display: block;
+    margin-top: 20px; }
+    .instagram__link img {
+      width: 40px;
+      height: 40px; }
+  .instagram__photo-list {
+    display: flex;
+    margin-top: 43px;
+    list-style-type: none; }
+  .instagram__photo-item {
+    margin-right: 20px; }
+    .instagram__photo-item:last-child {
+      margin-right: 0; }
+  .instagram__photo {
+    width: 160px;
+    height: 183px;
+    border-radius: 10px;
+    object-fit: cover; }
+  .instagram__next-button {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none; }
+
 * {
   font-family: "Gilroy", sans-serif;
   margin: 0;
