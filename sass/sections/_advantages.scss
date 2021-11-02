@@ -1,31 +1,31 @@
-.advantages{
+.advantages {
     padding: 0 18px;
     padding-top: 47px;
     padding-bottom: 64px;
     background-color: #FFF7E1;
-    background:url("./images/advantages/bg-top.svg") center top no-repeat,
-    url("./images/advantages/bg-center.svg") center top 62px no-repeat;
+    background: url("/images/advantages/bg-top.svg") center top no-repeat,
+        url("/images/advantages/bg-center.svg") center top 62px no-repeat;
     background-size: 100%;
 
-    &__title{
+    &__title {
         width: 230px;
     }
 
-    &__list{
+    &__list {
         margin-top: 30px;
         list-style: none;
     }
 
-    &__item{
+    &__item {
         margin-bottom: 30px;
         display: flex;
         align-items: flex-start;
-        
-        &:last-child{
+
+        &:last-child {
             margin-bottom: 0px;
         }
 
-        &__icon-container{
+        &__icon-container {
             display: flex;
             flex-shrink: 0;
             justify-content: center;
@@ -36,21 +36,21 @@
             border-radius: 50%;
         }
 
-        &__icon{
+        &__icon {
             height: 16px;
         }
 
-        &__container{
+        &__container {
             margin-left: 20px;
         }
 
-        &__title{
+        &__title {
             font-weight: 700;
             font-size: 16px;
             line-height: 19.34px;
         }
 
-        &__description{
+        &__description {
             margin-top: 13px;
             font-weight: 500;
             font-size: 12px;
