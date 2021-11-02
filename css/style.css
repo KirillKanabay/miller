@@ -501,6 +501,47 @@ label > input[type="radio"] + * {
     padding-top: 42px;
     overflow: visible !important; }
 
+.advantages {
+  padding: 0 18px;
+  padding-top: 47px;
+  padding-bottom: 64px;
+  background-color: #FFF7E1;
+  background: url("/images/advantages/bg-top.svg") center top no-repeat, url("/images/advantages/bg-center.svg") center top 62px no-repeat;
+  background-size: 100%; }
+  .advantages__title {
+    width: 230px; }
+  .advantages__list {
+    margin-top: 30px;
+    list-style: none; }
+  .advantages__item {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start; }
+    .advantages__item:last-child {
+      margin-bottom: 0px; }
+    .advantages__item__icon-container {
+      display: flex;
+      flex-shrink: 0;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: #F9B300;
+      border-radius: 50%; }
+    .advantages__item__icon {
+      height: 16px; }
+    .advantages__item__container {
+      margin-left: 20px; }
+    .advantages__item__title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19.34px; }
+    .advantages__item__description {
+      margin-top: 13px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15.6px; }
+
 * {
   font-family: "Gilroy", sans-serif;
   margin: 0;
