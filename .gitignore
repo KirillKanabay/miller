@@ -90,4 +90,4 @@ lerna-debug.log
 .DS_Store
 Thumbs.db
 
-#style.css.map
+style.css.map
