@@ -670,6 +670,33 @@ label > input[type="radio"] + * {
   .mailing__submit {
     margin-top: 20px; }
 
+.footer {
+  margin-top: 60px;
+  padding-bottom: 50px; }
+  .footer__navigation {
+    display: flex;
+    justify-content: center; }
+    .footer__navigation__list {
+      display: flex;
+      list-style-type: none; }
+    .footer__navigation__item {
+      margin-right: 30px; }
+      .footer__navigation__item:last-child {
+        margin-right: 0px; }
+    .footer__navigation__link {
+      text-decoration: none;
+      color: var(--black);
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14.12px; }
+  .footer__logo-link {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center; }
+  .footer__logo {
+    width: 110px;
+    height: 50px; }
+
 * {
   font-family: "Gilroy", sans-serif;
   margin: 0;

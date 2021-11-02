@@ -1,0 +1,40 @@
+.footer{
+    margin-top: 60px;
+    padding-bottom: 50px;
+    
+    &__navigation{
+        display: flex;
+        justify-content: center;
+        
+        &__list{
+            display: flex;
+            list-style-type: none;
+        }
+
+        &__item{
+            margin-right: 30px;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+
+        &__link{
+            text-decoration: none;
+            color: var(--black);
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14.12px;
+        }
+    }
+
+    &__logo-link{
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    &__logo{
+        width: 110px;
+        height: 50px;
+    }
+}
