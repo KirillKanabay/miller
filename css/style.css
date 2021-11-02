@@ -237,6 +237,73 @@ label > input[type="radio"] + * {
   background: none;
   height: 60px; }
 
+.stars-list,
+.roasting-list,
+.circles-list,
+.titled-rating-list {
+  display: flex;
+  list-style: none; }
+
+.star-item {
+  font-size: 16px; }
+
+.circle-item i {
+  font-size: 6px; }
+
+.roasting-item:last-child,
+.circle-item:last-child,
+.star-item:last-child {
+  margin-right: 0px; }
+
+.star-item i,
+.circle-item i {
+  color: #F0F0F0; }
+
+.star-item-selected i,
+.circle-item-selected i {
+  color: #F9B300; }
+
+.rating-values {
+  margin-top: 4px; }
+
+.rating-mark {
+  font-weight: 700;
+  font-size: 12.5px;
+  line-height: 15px; }
+
+.rating-count {
+  font-weight: 500;
+  font-size: 8.75px;
+  line-height: 10.3px;
+  color: var(--grey); }
+
+.roasting-list {
+  margin-top: 19px;
+  margin-bottom: 18px; }
+
+.roasting-item {
+  margin-right: 5px;
+  height: 12px; }
+
+.roasting-item svg {
+  fill: #505050; }
+
+.circle-item {
+  height: 6px;
+  margin-right: 2px; }
+
+.rating-title {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  margin-bottom: 7px; }
+
+.titled-rating-list {
+  flex-direction: column; }
+
+.titled-rating-item {
+  margin-bottom: 9px; }
+
 .intro {
   position: relative;
   padding: 0 18px;
@@ -294,7 +361,6 @@ label > input[type="radio"] + * {
     .intro__slider-inputs {
       margin-top: 206px; } }
 
-/* Catalog section */
 .catalog {
   position: relative;
   margin-top: 70px; }
@@ -332,6 +398,108 @@ label > input[type="radio"] + * {
 @media screen and (min-width: 768px) {
   .catalog .slick-dots {
     margin-top: 35px; } }
+
+.discount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 60px;
+  padding: 0 18px;
+  overflow: hidden; }
+  .discount__title {
+    text-align: right; }
+  .discount__description {
+    width: 260px;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: right; }
+  .discount__span {
+    position: absolute;
+    top: 33px;
+    left: 26px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #F9B300; }
+  .discount__percent {
+    position: absolute;
+    left: 24px;
+    top: -22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 21.88px;
+    line-height: 26.45px;
+    background-color: #F9B300;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 6.25px rgba(143, 143, 143, 0.25)); }
+  .discount__list {
+    align-self: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    column-gap: 20px;
+    margin-bottom: 13px;
+    list-style-type: none; }
+  .discount__item {
+    position: relative;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12.5px rgba(146, 146, 146, 0.25);
+    padding: 60px 26px 30px 24px; }
+    .discount__item__container {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .discount__item__image {
+      width: 107px;
+      height: 193px;
+      margin-right: 12px; }
+    .discount__item__title {
+      margin-top: 23px;
+      font-weight: 900;
+      font-size: 15.63px;
+      line-height: 19.5px; }
+    .discount__item__description {
+      margin-top: 7px;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 11.77px;
+      word-wrap: wrap; }
+    .discount__item__price {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px; }
+      .discount__item__price .old-price {
+        color: #C6C6C6;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18.83px;
+        margin-bottom: -4.96px; }
+      .discount__item__price .discount-price {
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 24.96px; }
+    .discount__item__button {
+      margin-top: 19px;
+      height: 30px !important;
+      font-size: 12px !important;
+      line-height: 14.51px !important;
+      width: 111px !important; }
+    .discount__item__footer {
+      display: flex;
+      justify-content: space-between; }
+  .discount .weight-select {
+    position: absolute;
+    top: 14px;
+    right: 24px; }
+  .discount .slick-list {
+    padding-top: 42px;
+    overflow: visible !important; }
 
 * {
   font-family: "Gilroy", sans-serif;

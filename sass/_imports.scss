@@ -1,0 +1,15 @@
+//Import variables
+@import './_variables.scss';
+
+//Import blocks file
+
+@import './blocks/_header.scss';
+@import './blocks/_mobile-menu.scss';
+@import './blocks/_slider.scss';
+@import './blocks/_rating.scss';
+
+//Import section blocks
+
+@import './blocks/sections/_intro.scss';
+@import './blocks/sections/_catalog.scss';
+@import './blocks/sections/_discount.scss';

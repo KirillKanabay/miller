@@ -10,8 +10,10 @@
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
 
-    <!-- Slick js library (sliders) -->
+    <!-- Slick css (sliders) -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/style.css">
 
     <title>Miller</title>
@@ -164,62 +166,42 @@
             </div>
         </section>
         <section class="discount">
-            <h2 class="section-title discount-title">Товары со скидкой</h2>
-            <p class="discount-description">
+            <h2 class="section-title discount__title">Товары со скидкой</h2>
+            <p class="discount__description">
                 Наша компания предлагает покупать товар со скидкой не только в дни распродаж или в течение действия
                 ограниченных предложений,
                 но и пользоваться скидками постоянно!
             </p>
-            <ul class="discount-items">
-                <li class="discount-item">
-                    <i class="percent-icon"><span>%</span></i>
-                    <span class="discount-span">Скидки</span>
+            <ul class="discount__list">
+                <li class="discount__item">
+                    <i class="discount__percent"><span>%</span></i>
+                    <span class="discount__span">Скидки</span>
                     <select class="select weight-select" name="weight" id="item-weight-1">
                         <option value="250 г.">250 г.</option>
                         <option value="500 г.">500 г</option>
                         <option value="750 г.">750 г.</option>
                         <option value="1000 г.">1000 г.</option>
                     </select>
-                    <div class="discount-item-container">
-                        <img class="discount-item-image" src="images/discount/colombia_supremo.png"
+                    <div class="discount__item__container">
+                        <img class="discount__item__image" src="images/discount/colombia_supremo.png"
                             alt="Colombia supremo">
                         <div class="rating-container">
                             <div class="stars-rating">
                                 <ul class="stars-list">
                                     <li class="star-item star-item-selected">
-                                        <svg width="16" height="15" viewBox="0 0 16 15"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
-                                        </svg>
+                                        <i class="fas fa-star"></i>
                                     </li>
                                     <li class="star-item star-item-selected">
-                                        <svg width="16" height="15" viewBox="0 0 16 15"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
-                                        </svg>
+                                        <i class="fas fa-star"></i>
                                     </li>
                                     <li class="star-item star-item-selected">
-                                        <svg width="16" height="15" viewBox="0 0 16 15"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
-                                        </svg>
+                                        <i class="fas fa-star"></i>
                                     </li>
                                     <li class="star-item star-item-selected">
-                                        <svg width="16" height="15" viewBox="0 0 16 15"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
-                                        </svg>
+                                        <i class="fas fa-star"></i>
                                     </li>
                                     <li class="star-item">
-                                        <svg width="16" height="15" viewBox="0 0 16 15"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
-                                        </svg>
+                                        <i class="fas fa-star"></i>
                                     </li>
                                 </ul>
                                 <div class="rating-values">
@@ -272,64 +254,34 @@
                                         <span class="rating-title">Кислинка</span>
                                         <ul class="circles-list">
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                         </ul>
                                     </div>
@@ -339,64 +291,34 @@
                                         <span class="rating-title">Горчинка</span>
                                         <ul class="circles-list">
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                         </ul>
                                     </div>
@@ -406,64 +328,34 @@
                                         <span class="rating-title">Насыщенность</span>
                                         <ul class="circles-list">
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                         </ul>
                                     </div>
@@ -471,65 +363,45 @@
                             </ul>
                         </div>
                     </div>
-                    <h3 class="discount-item-title">Colombia Supremo</h3>
-                    <p class="discount-item-description">Свежеобжаренный кофе - описание товара, вкус, аромат</p>
-                    <footer class="discount-item-footer">
-                        <div class="discount-item-price">
+                    <h3 class="discount__item__title">Colombia Supremo</h3>
+                    <p class="discount__item__description">Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                    <footer class="discount__item__footer">
+                        <div class="discount__item__price">
                             <s class="old-price">350 ₽</s>
                             <span class="discount-price">250 ₽</span>
                         </div>
-                        <button class="button to-basket-button">В корзину</button>
+                        <button class="button discount__item__button" id="to-basket-button">В корзину</button>
                     </footer>
                 </li>
-                <li class="discount-item">
-                    <i class="percent-icon"><span>%</span></i>
-                    <span class="discount-span">Скидки</span>
+                <li class="discount__item">
+                    <i class="discount__percent"><span>%</span></i>
+                    <span class="discount__span">Скидки</span>
                     <select class="select weight-select" name="weight" id="item-weight-1">
                         <option value="250 г.">250 г.</option>
                         <option value="500 г.">500 г</option>
                         <option value="750 г.">750 г.</option>
                         <option value="1000 г.">1000 г.</option>
                     </select>
-                    <div class="discount-item-container">
-                        <img class="discount-item-image" src="images/discount/colombia_supremo.png"
+                    <div class="discount__item__container">
+                        <img class="discount__item__image" src="images/discount/colombia_supremo.png"
                             alt="Colombia supremo">
                         <div class="rating-container">
                             <div class="stars-rating">
                                 <ul class="stars-list">
                                     <li class="star-item star-item-selected">
-                                        <svg width="16" height="15" viewBox="0 0 16 15"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
-                                        </svg>
+                                        <i class="fas fa-star"></i>
                                     </li>
                                     <li class="star-item star-item-selected">
-                                        <svg width="16" height="15" viewBox="0 0 16 15"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
-                                        </svg>
+                                        <i class="fas fa-star"></i>
                                     </li>
                                     <li class="star-item star-item-selected">
-                                        <svg width="16" height="15" viewBox="0 0 16 15"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
-                                        </svg>
+                                        <i class="fas fa-star"></i>
                                     </li>
                                     <li class="star-item star-item-selected">
-                                        <svg width="16" height="15" viewBox="0 0 16 15"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
-                                        </svg>
+                                        <i class="fas fa-star"></i>
                                     </li>
                                     <li class="star-item">
-                                        <svg width="16" height="15" viewBox="0 0 16 15"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" />
-                                        </svg>
+                                        <i class="fas fa-star"></i>
                                     </li>
                                 </ul>
                                 <div class="rating-values">
@@ -582,64 +454,34 @@
                                         <span class="rating-title">Кислинка</span>
                                         <ul class="circles-list">
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                         </ul>
                                     </div>
@@ -649,64 +491,34 @@
                                         <span class="rating-title">Горчинка</span>
                                         <ul class="circles-list">
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                         </ul>
                                     </div>
@@ -716,64 +528,34 @@
                                         <span class="rating-title">Насыщенность</span>
                                         <ul class="circles-list">
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item circle-item-selected">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                             <li class="circle-item">
-                                                <svg width="6" height="6" viewBox="0 0 6 6"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="3" cy="3" r="3" />
-                                                </svg>
+                                                <i class="fas fa-circle"></i>
                                             </li>
                                         </ul>
                                     </div>
@@ -781,14 +563,14 @@
                             </ul>
                         </div>
                     </div>
-                    <h3 class="discount-item-title">Colombia Supremo</h3>
-                    <p class="discount-item-description">Свежеобжаренный кофе - описание товара, вкус, аромат</p>
-                    <footer class="discount-item-footer">
-                        <div class="discount-item-price">
+                    <h3 class="discount__item__title">Colombia Supremo</h3>
+                    <p class="discount__item__description">Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                    <footer class="discount__item__footer">
+                        <div class="discount__item__price">
                             <s class="old-price">350 ₽</s>
                             <span class="discount-price">250 ₽</span>
                         </div>
-                        <button class="button to-basket-button">В корзину</button>
+                        <button class="button discount__item__button" id="to-basket-button">В корзину</button>
                     </footer>
                 </li>
             </ul>

@@ -7,8 +7,11 @@
 }
 
 .star-item{
-    margin-right: 1px;
-    height: 16px;
+    font-size: 16px;
+}
+
+.circle-item i{
+    font-size: 6px;
 }
 
 .roasting-item:last-child,
@@ -17,14 +20,14 @@
     margin-right: 0px;
 }
 
-.star-item svg,
-.circle-item svg{
-    fill: var(--light-gray);
+.star-item i,
+.circle-item i{
+    color: $light-gray;
 }
 
-.star-item-selected svg,
-.circle-item-selected svg{
-    fill: var(--primary);
+.star-item-selected i,
+.circle-item-selected i{
+    color: $primary;
 }
 
 .rating-values{
@@ -55,7 +58,7 @@
 }
 
 .roasting-item svg{
-    fill: var(--dark-grey);
+    fill: $dark-grey;
 }
 
 .circle-item{
