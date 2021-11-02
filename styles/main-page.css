@@ -1,35 +1,3 @@
-/* Roasting section */
-
-.roasting-section{
-    padding: 0 18px;
-    padding-top: 80px;
-    background: url("/images/advantages/bg-bottom.svg") center top no-repeat,
-                url("/images/roasting/bg-bottom.svg") center bottom 23px no-repeat,
-                url("/images/roasting/bg-center.png") center bottom 23px no-repeat;
-    background-size: 100%;
-}
-
-.roasting-section-title{
-    color: #fff;
-    margin-bottom: 30px;
-}
-
-.roasting-section-description{
-    color: #fff;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18.2px;
-    margin-bottom: 18.2px;
-}
-
-.roasting-section-description:last-child{
-    margin-bottom: 0;
-}
-
-.roasting-section-button{
-    margin-top: 40px;
-}
-
 /* News section */
 
 .news-section{
