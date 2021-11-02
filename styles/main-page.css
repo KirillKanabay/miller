@@ -1,40 +1,4 @@
-.mailing-section{
-    padding: 0 18px;
-}
 
-.mailing-section-image{
-    display: block;
-    margin: 0 auto;
-    margin-top: -30px;
-    width: 100%;
-}
-
-.mailing-section-title{
-    margin-top: 14px;
-}
-
-.mailing-section-description{
-    margin-top: 30px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18.2px;
-    color: var(--black2);
-}
-
-.mailing-section-form{
-    margin-top: 20px;
-}
-
-.mailing-section-submit{
-    margin-top: 20px;
-}
-
-.mailing-section-form-description{
-    margin-top: 10px;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 13px;
-}
 
 .footer{
     margin-top: 60px;

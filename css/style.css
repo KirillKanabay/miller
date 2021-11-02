@@ -645,6 +645,31 @@ label > input[type="radio"] + * {
     border-radius: 50%;
     border: none; }
 
+.mailing {
+  padding: 0 18px; }
+  .mailing__image {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0px;
+    width: 100%; }
+  .mailing__title {
+    margin-top: 14px; }
+  .mailing__description {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18.2px;
+    color: #222222; }
+  .mailing__form {
+    margin-top: 20px; }
+    .mailing__form__description {
+      margin-top: 10px;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 13px; }
+  .mailing__submit {
+    margin-top: 20px; }
+
 * {
   font-family: "Gilroy", sans-serif;
   margin: 0;
