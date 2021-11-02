@@ -11,9 +11,10 @@
         href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
 
     <!-- Slick css (sliders) -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
 
     <title>Miller</title>
@@ -75,663 +76,683 @@
         </footer>
     </nav>
     <div id="page-container">
-    <header class="header">
-        <div class="header__container">
-            <button class="transparent-button" id="open-menu-mobile-button">
-                <img src="images/burger_icon.svg" alt="Иконка бургер-меню">
-            </button>
-            <img class="header__logo" src="images/logo.png" alt="Логотип Miller">
-        </div>
-        <div class="header__container">
-            <ul class="header__link-list">
-                <li class="header__link-item">
-                    <a class="header__link" href="#">
-                        <img src="images/search_icon.svg" alt="Иконка поиска">
-                    </a>
-                </li>
-                <li class="header__link-item">
-                    <a class="header__link" href="#">
-                        <img src="images/basket_icon.svg" alt="Иконка поиска">
-                    </a>
-                </li>
-                <li class="header__link-item">
-                    <a class="header__link" href="#">
-                        <img src="images/user_icon.svg" alt="Иконка поиска">
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-    </header>
-    <main>
-        <section class="intro">
-            <div class="intro__slider">
-                <div class="intro__slide">
-                    <h2 class="intro__title">Свежеобжаренный кофе</h2>
-                    <p class="intro__description">
-                        Кофе Калининградской обжарки
-                        из разных стран произрастания
-                        с доставкой на дом.
-                    </p>
-                    <p class="intro__description intro__description--coffee">
-                        Мы обжариваем кофе
-                        <b>каждые выходные.</b>
-                    </p>
-                    <img class="intro__image" src="./images/coffee-espresso.png" alt="Кофе эспрессо">
-                </div>
-            </div>
-            <p class="slider-inputs intro__slider-inputs">
-                <label>
-                    <input class="slide-input" type="radio" name="intro-slide" id="intro-slide-1" checked>
-                    <span>slide-1</span>
-                </label>
-                <label>
-                    <input class="slide-input" type="radio" name="intro-slide" id="intro-slide-2">
-                    <span>slide-2</span>
-                </label>
-                <label>
-                    <input class="slide-input" type="radio" name="intro-slide" id="intro-slide-2">
-                    <span>slide-3</span>
-                </label>
-            </p>
-
-            <a class="button intro__button" href="#">Посмотреть каталог</a>
-        </section>
-        <section class="catalog">
-            <h2 class="section-title catalog__title">Каталоги нашей продукции</h2>
-            <div class=carousel-container>
-                <div class="catalog__carousel carousel">
-                    <div class="carousel-item catalog__slide catalog__slide--current">
-                        <img class="catalog__slide__image" src="./images/catalog/coffee.png" alt="Кофе эспрессо">
-                        <h3 class="catalog__slide__title">Свежеобжаренный кофе</h3>
-                        <a class="button catalog__slide__button" href="#">Купить</a>
-                    </div>
-                    <div class="carousel-item catalog__slide">
-                        <img class="catalog__slide__image" src="./images/catalog/teapot.png"
-                            alt="Чай и кофейные напитки">
-                        <h3 class="catalog__slide__title">Чай и кофейные напитки</h3>
-                        <a class="button catalog__slide__button" href="#">Купить</a>
-                    </div>
-                    <div class="carousel-item catalog__slide">
-                        <img class="catalog__slide__image" src="./images/catalog/vending.png" alt="Вендинг">
-                        <h3 class="catalog__slide__title">Продукция для вендинга</h3>
-                        <a class="button catalog__slide__button" href="#">Купить</a>
-                    </div>
-                    <div class="carousel-item catalog__slide">
-                        <img class="catalog__slide__image" src="./images/catalog/pp.png" alt="Здоровое питание">
-                        <h3 class="catalog__slide__title">Здоровое питание</h3>
-                        <a class="button catalog__slide__button" href="#">Купить</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="discount">
-            <h2 class="section-title discount__title">Товары со скидкой</h2>
-            <p class="discount__description">
-                Наша компания предлагает покупать товар со скидкой не только в дни распродаж или в течение действия
-                ограниченных предложений,
-                но и пользоваться скидками постоянно!
-            </p>
-            <ul class="discount__list">
-                <li class="discount__item">
-                    <i class="discount__percent"><span>%</span></i>
-                    <span class="discount__span">Скидки</span>
-                    <select class="select weight-select" name="weight" id="item-weight-1">
-                        <option value="250 г.">250 г.</option>
-                        <option value="500 г.">500 г</option>
-                        <option value="750 г.">750 г.</option>
-                        <option value="1000 г.">1000 г.</option>
-                    </select>
-                    <div class="discount__item__container">
-                        <img class="discount__item__image" src="images/discount/colombia_supremo.png"
-                            alt="Colombia supremo">
-                        <div class="rating-container">
-                            <div class="stars-rating">
-                                <ul class="stars-list">
-                                    <li class="star-item star-item-selected">
-                                        <i class="fas fa-star"></i>
-                                    </li>
-                                    <li class="star-item star-item-selected">
-                                        <i class="fas fa-star"></i>
-                                    </li>
-                                    <li class="star-item star-item-selected">
-                                        <i class="fas fa-star"></i>
-                                    </li>
-                                    <li class="star-item star-item-selected">
-                                        <i class="fas fa-star"></i>
-                                    </li>
-                                    <li class="star-item">
-                                        <i class="fas fa-star"></i>
-                                    </li>
-                                </ul>
-                                <div class="rating-values">
-                                    <span class="rating-mark">4.0</span>
-                                    <span class="rating-count">(32 отзыва)</span>
-                                </div>
-                            </div>
-                            <div class="roasting-rating">
-                                <ul class="roasting-list">
-                                    <li class="roasting-item">
-                                        <svg width="12" height="12" viewBox="0 0 12 12"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
-                                        </svg>
-                                    </li>
-                                    <li class="roasting-item">
-                                        <svg width="12" height="12" viewBox="0 0 12 12"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
-                                        </svg>
-                                    </li>
-                                    <li class="roasting-item">
-                                        <svg width="12" height="12" viewBox="0 0 12 12"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
-                                        </svg>
-                                    </li>
-                                    <li class="roasting-item">
-                                        <svg width="12" height="12" viewBox="0 0 12 12"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
-                                        </svg>
-                                    </li>
-                                    <li class="roasting-item">
-                                        <svg width="12" height="12" viewBox="0 0 12 12"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
-                                        </svg>
-                                    </li>
-                                </ul>
-                            </div>
-                            <ul class="titled-rating-list">
-                                <li class="titled-rating-item">
-                                    <div class="titled-rating">
-                                        <span class="rating-title">Кислинка</span>
-                                        <ul class="circles-list">
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="titled-rating-item">
-                                    <div class="titled-rating">
-                                        <span class="rating-title">Горчинка</span>
-                                        <ul class="circles-list">
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="titled-rating-item">
-                                    <div class="titled-rating">
-                                        <span class="rating-title">Насыщенность</span>
-                                        <ul class="circles-list">
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h3 class="discount__item__title">Colombia Supremo</h3>
-                    <p class="discount__item__description">Свежеобжаренный кофе - описание товара, вкус, аромат</p>
-                    <footer class="discount__item__footer">
-                        <div class="discount__item__price">
-                            <s class="old-price">350 ₽</s>
-                            <span class="discount-price">250 ₽</span>
-                        </div>
-                        <button class="button discount__item__button" id="to-basket-button">В корзину</button>
-                    </footer>
-                </li>
-                <li class="discount__item">
-                    <i class="discount__percent"><span>%</span></i>
-                    <span class="discount__span">Скидки</span>
-                    <select class="select weight-select" name="weight" id="item-weight-1">
-                        <option value="250 г.">250 г.</option>
-                        <option value="500 г.">500 г</option>
-                        <option value="750 г.">750 г.</option>
-                        <option value="1000 г.">1000 г.</option>
-                    </select>
-                    <div class="discount__item__container">
-                        <img class="discount__item__image" src="images/discount/colombia_supremo.png"
-                            alt="Colombia supremo">
-                        <div class="rating-container">
-                            <div class="stars-rating">
-                                <ul class="stars-list">
-                                    <li class="star-item star-item-selected">
-                                        <i class="fas fa-star"></i>
-                                    </li>
-                                    <li class="star-item star-item-selected">
-                                        <i class="fas fa-star"></i>
-                                    </li>
-                                    <li class="star-item star-item-selected">
-                                        <i class="fas fa-star"></i>
-                                    </li>
-                                    <li class="star-item star-item-selected">
-                                        <i class="fas fa-star"></i>
-                                    </li>
-                                    <li class="star-item">
-                                        <i class="fas fa-star"></i>
-                                    </li>
-                                </ul>
-                                <div class="rating-values">
-                                    <span class="rating-mark">4.0</span>
-                                    <span class="rating-count">(32 отзыва)</span>
-                                </div>
-                            </div>
-                            <div class="roasting-rating">
-                                <ul class="roasting-list">
-                                    <li class="roasting-item">
-                                        <svg width="12" height="12" viewBox="0 0 12 12"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
-                                        </svg>
-                                    </li>
-                                    <li class="roasting-item">
-                                        <svg width="12" height="12" viewBox="0 0 12 12"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
-                                        </svg>
-                                    </li>
-                                    <li class="roasting-item">
-                                        <svg width="12" height="12" viewBox="0 0 12 12"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
-                                        </svg>
-                                    </li>
-                                    <li class="roasting-item">
-                                        <svg width="12" height="12" viewBox="0 0 12 12"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
-                                        </svg>
-                                    </li>
-                                    <li class="roasting-item">
-                                        <svg width="12" height="12" viewBox="0 0 12 12"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
-                                        </svg>
-                                    </li>
-                                </ul>
-                            </div>
-                            <ul class="titled-rating-list">
-                                <li class="titled-rating-item">
-                                    <div class="titled-rating">
-                                        <span class="rating-title">Кислинка</span>
-                                        <ul class="circles-list">
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="titled-rating-item">
-                                    <div class="titled-rating">
-                                        <span class="rating-title">Горчинка</span>
-                                        <ul class="circles-list">
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="titled-rating-item">
-                                    <div class="titled-rating">
-                                        <span class="rating-title">Насыщенность</span>
-                                        <ul class="circles-list">
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item circle-item-selected">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                            <li class="circle-item">
-                                                <i class="fas fa-circle"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h3 class="discount__item__title">Colombia Supremo</h3>
-                    <p class="discount__item__description">Свежеобжаренный кофе - описание товара, вкус, аромат</p>
-                    <footer class="discount__item__footer">
-                        <div class="discount__item__price">
-                            <s class="old-price">350 ₽</s>
-                            <span class="discount-price">250 ₽</span>
-                        </div>
-                        <button class="button discount__item__button" id="to-basket-button">В корзину</button>
-                    </footer>
-                </li>
-            </ul>
-        </section>
-        <section class="advantages">
-            <h2 class="section-title advantages__title">
-                Почему стоит работать именно с нами?
-            </h2>
-            <ul class="advantages__list">
-                <li class="advantages__item">
-                    <div class="advantages__item__icon-container">
-                        <img class="advantages__item__icon" src="./images/advantages/coffee.svg"
-                            alt="Иконка консультаций">
-                    </div>
-                    <div class="advantages__item__container">
-                        <h3 class="advantages__item__title">
-                            Всегда свежая обжарка
-                        </h3>
-                        <p class="advantages__item__description">
-                            Подбор степени обжарки под каждый сорт кофе. Всегда свежая обжарка
-                        </p>
-                    </div>
-                </li>
-                <li class="advantages__item">
-                    <div class="advantages__item__icon-container">
-                        <img class="advantages__item__icon" src="./images/advantages/discount.svg"
-                            alt="Иконка консультаций">
-                    </div>
-                    <div class="advantages__item__container">
-                        <h3 class="advantages__item__title">
-                            Лучшие цены на продукцию
-                        </h3>
-                        <p class="advantages__item__description">
-                            Благодаря крупным объемам производства
-                            мы даем лучшие цены на нашу продукцию
-                        </p>
-                    </div>
-                </li>
-                <li class="advantages__item">
-                    <div class="advantages__item__icon-container">
-                        <img class="advantages__item__icon" src="images/advantages/support.svg" alt="Иконка консультаций">
-                    </div>
-                    <div class="advantages__item__container">
-                        <h3 class="advantages__item__title">
-                            Консультации 24/7
-                        </h3>
-                        <p class="advantages__item__description">
-                            Наши специалисты готовы всегда помочь
-                            и подсказать вам с выбором кофе
-                            или другой продукции.
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section class="roasting">
-            <h2 class="section-title roasting__title">
-                Как мы обжариваем наш кофе:
-            </h2>
-            <p class="roasting__description">
-                Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве.
-                Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое
-                оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой
-                продукции. </p>
-            <p class="roasting__description">
-                Кофе поставляется в контейнерах напрямую с плантаций
-                по всему миру. Компания имеет долгосрочные контракты
-                по поставке продукции. Каждая партия проходит строгий контроль на заводе для проверки зерна. Зеленое
-                зерно обжаривается, проходит процесс дегазации
-                и тут же отправляется клиентам. Наши обжарщики прошли обучение в России и за рубежом. У нас свой подход
-                к каждой партии зерна.
-            </p>
-            <p class="roasting__description">
-                Мы раскрываем вкус каждого сорта кофе.
-            </p>
-            <a class="button roasting__button" href="#">Посмотреть каталог</a>
-        </section>
-        <section class="news">
-            <h2 class="section-title">Новости компании</h2>
-            <div class="carousel-inputs">
-                <button id="left-arrow">
-                    <img src="./images/carousel/left-arrow.svg" alt="Left arrow carousel">
+        <header class="header">
+            <div class="header__container">
+                <button class="transparent-button" id="open-menu-mobile-button">
+                    <img src="images/burger_icon.svg" alt="Иконка бургер-меню">
                 </button>
-                <button id="right-arrow">
-                    <img src="./images/carousel/right-arrow.svg" alt="Right arrow carousel">
-                </button>
+                <img class="header__logo" src="images/logo.png" alt="Логотип Miller">
             </div>
-            <ul class="news-list">
-                <li class="news-item">
-                    <img class="news-preview" src="./images/news/preview.png" alt="Танзанский кофе">
-                    <article class="news-article">
-                        <h3 class="news-title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h3>
-                        <div class="news-paragraphs">
-                            <p class="news-description">Танзания – красивая африканская страна. Именно здесь расположены
-                                легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.</p>
-                            <p class="news-description">Но наш интерес вызван не столько природными красотами, сколько
-                                кофе...</p>
-                        </div>
-                        <a class="news-continue-link" href="#">
-                            <span>Подробнее</span>
-                            <img src="./images/news/link-arrow.svg" alt="Стрелка подробнее">
+            <div class="header__container">
+                <ul class="header__link-list">
+                    <li class="header__link-item">
+                        <a class="header__link" href="#">
+                            <img src="images/search_icon.svg" alt="Иконка поиска">
                         </a>
-                    </article>
-                </li>
-            </ul>
-            <a class="all-news-link" href="#">Читать все</a>
-        </section>
-        <section class="instagram">
-            <h2 class="section-title">Мы в Instagram</h2>
-            <a class="instagram-link" href="#">
-                <img src="./images/instagram_icon.svg" alt="Instagram icon">
+                    </li>
+                    <li class="header__link-item">
+                        <a class="header__link" href="#">
+                            <img src="images/basket_icon.svg" alt="Иконка поиска">
+                        </a>
+                    </li>
+                    <li class="header__link-item">
+                        <a class="header__link" href="#">
+                            <img src="images/user_icon.svg" alt="Иконка поиска">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </header>
+        <main>
+            <section class="intro">
+                <div class="intro__slider">
+                    <div class="intro__slide">
+                        <h2 class="intro__title">Свежеобжаренный кофе</h2>
+                        <p class="intro__description">
+                            Кофе Калининградской обжарки
+                            из разных стран произрастания
+                            с доставкой на дом.
+                        </p>
+                        <p class="intro__description intro__description--coffee">
+                            Мы обжариваем кофе
+                            <b>каждые выходные.</b>
+                        </p>
+                        <img class="intro__image" src="./images/coffee-espresso.png" alt="Кофе эспрессо">
+                    </div>
+                </div>
+                <p class="slider-inputs intro__slider-inputs">
+                    <label>
+                        <input class="slide-input" type="radio" name="intro-slide" id="intro-slide-1" checked>
+                        <span>slide-1</span>
+                    </label>
+                    <label>
+                        <input class="slide-input" type="radio" name="intro-slide" id="intro-slide-2">
+                        <span>slide-2</span>
+                    </label>
+                    <label>
+                        <input class="slide-input" type="radio" name="intro-slide" id="intro-slide-2">
+                        <span>slide-3</span>
+                    </label>
+                </p>
+
+                <a class="button intro__button" href="#">Посмотреть каталог</a>
+            </section>
+            <section class="catalog">
+                <h2 class="section-title catalog__title">Каталоги нашей продукции</h2>
+                <div class=carousel-container>
+                    <div class="catalog__carousel carousel">
+                        <div class="carousel-item catalog__slide catalog__slide--current">
+                            <img class="catalog__slide__image" src="./images/catalog/coffee.png" alt="Кофе эспрессо">
+                            <h3 class="catalog__slide__title">Свежеобжаренный кофе</h3>
+                            <a class="button catalog__slide__button" href="#">Купить</a>
+                        </div>
+                        <div class="carousel-item catalog__slide">
+                            <img class="catalog__slide__image" src="./images/catalog/teapot.png"
+                                alt="Чай и кофейные напитки">
+                            <h3 class="catalog__slide__title">Чай и кофейные напитки</h3>
+                            <a class="button catalog__slide__button" href="#">Купить</a>
+                        </div>
+                        <div class="carousel-item catalog__slide">
+                            <img class="catalog__slide__image" src="./images/catalog/vending.png" alt="Вендинг">
+                            <h3 class="catalog__slide__title">Продукция для вендинга</h3>
+                            <a class="button catalog__slide__button" href="#">Купить</a>
+                        </div>
+                        <div class="carousel-item catalog__slide">
+                            <img class="catalog__slide__image" src="./images/catalog/pp.png" alt="Здоровое питание">
+                            <h3 class="catalog__slide__title">Здоровое питание</h3>
+                            <a class="button catalog__slide__button" href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="discount">
+                <h2 class="section-title discount__title">Товары со скидкой</h2>
+                <p class="discount__description">
+                    Наша компания предлагает покупать товар со скидкой не только в дни распродаж или в течение действия
+                    ограниченных предложений,
+                    но и пользоваться скидками постоянно!
+                </p>
+                <ul class="discount__list">
+                    <li class="discount__item">
+                        <i class="discount__percent"><span>%</span></i>
+                        <span class="discount__span">Скидки</span>
+                        <select class="select weight-select" name="weight" id="item-weight-1">
+                            <option value="250 г.">250 г.</option>
+                            <option value="500 г.">500 г</option>
+                            <option value="750 г.">750 г.</option>
+                            <option value="1000 г.">1000 г.</option>
+                        </select>
+                        <div class="discount__item__container">
+                            <img class="discount__item__image" src="images/discount/colombia_supremo.png"
+                                alt="Colombia supremo">
+                            <div class="rating-container">
+                                <div class="stars-rating">
+                                    <ul class="stars-list">
+                                        <li class="star-item star-item-selected">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="star-item star-item-selected">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="star-item star-item-selected">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="star-item star-item-selected">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="star-item">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="rating-values">
+                                        <span class="rating-mark">4.0</span>
+                                        <span class="rating-count">(32 отзыва)</span>
+                                    </div>
+                                </div>
+                                <div class="roasting-rating">
+                                    <ul class="roasting-list">
+                                        <li class="roasting-item">
+                                            <svg width="12" height="12" viewBox="0 0 12 12"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                            </svg>
+                                        </li>
+                                        <li class="roasting-item">
+                                            <svg width="12" height="12" viewBox="0 0 12 12"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                            </svg>
+                                        </li>
+                                        <li class="roasting-item">
+                                            <svg width="12" height="12" viewBox="0 0 12 12"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                            </svg>
+                                        </li>
+                                        <li class="roasting-item">
+                                            <svg width="12" height="12" viewBox="0 0 12 12"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                            </svg>
+                                        </li>
+                                        <li class="roasting-item">
+                                            <svg width="12" height="12" viewBox="0 0 12 12"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="titled-rating-list">
+                                    <li class="titled-rating-item">
+                                        <div class="titled-rating">
+                                            <span class="rating-title">Кислинка</span>
+                                            <ul class="circles-list">
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="titled-rating-item">
+                                        <div class="titled-rating">
+                                            <span class="rating-title">Горчинка</span>
+                                            <ul class="circles-list">
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="titled-rating-item">
+                                        <div class="titled-rating">
+                                            <span class="rating-title">Насыщенность</span>
+                                            <ul class="circles-list">
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3 class="discount__item__title">Colombia Supremo</h3>
+                        <p class="discount__item__description">Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                        <footer class="discount__item__footer">
+                            <div class="discount__item__price">
+                                <s class="old-price">350 ₽</s>
+                                <span class="discount-price">250 ₽</span>
+                            </div>
+                            <button class="button discount__item__button" id="to-basket-button">В корзину</button>
+                        </footer>
+                    </li>
+                    <li class="discount__item">
+                        <i class="discount__percent"><span>%</span></i>
+                        <span class="discount__span">Скидки</span>
+                        <select class="select weight-select" name="weight" id="item-weight-1">
+                            <option value="250 г.">250 г.</option>
+                            <option value="500 г.">500 г</option>
+                            <option value="750 г.">750 г.</option>
+                            <option value="1000 г.">1000 г.</option>
+                        </select>
+                        <div class="discount__item__container">
+                            <img class="discount__item__image" src="images/discount/colombia_supremo.png"
+                                alt="Colombia supremo">
+                            <div class="rating-container">
+                                <div class="stars-rating">
+                                    <ul class="stars-list">
+                                        <li class="star-item star-item-selected">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="star-item star-item-selected">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="star-item star-item-selected">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="star-item star-item-selected">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="star-item">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="rating-values">
+                                        <span class="rating-mark">4.0</span>
+                                        <span class="rating-count">(32 отзыва)</span>
+                                    </div>
+                                </div>
+                                <div class="roasting-rating">
+                                    <ul class="roasting-list">
+                                        <li class="roasting-item">
+                                            <svg width="12" height="12" viewBox="0 0 12 12"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                            </svg>
+                                        </li>
+                                        <li class="roasting-item">
+                                            <svg width="12" height="12" viewBox="0 0 12 12"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                            </svg>
+                                        </li>
+                                        <li class="roasting-item">
+                                            <svg width="12" height="12" viewBox="0 0 12 12"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                            </svg>
+                                        </li>
+                                        <li class="roasting-item">
+                                            <svg width="12" height="12" viewBox="0 0 12 12"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                            </svg>
+                                        </li>
+                                        <li class="roasting-item">
+                                            <svg width="12" height="12" viewBox="0 0 12 12"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.523614 10.1433C-0.628923 8.11131 0.15535 4.92432 2.53964 2.53985C5.24725 -0.166839 8.99111 -0.812127 10.9026 1.0986C10.9048 1.1011 10.9067 1.10394 10.9098 1.10648C10.5272 2.21925 9.30898 4.58694 5.65726 5.86702C2.31211 7.04027 1.02171 8.90558 0.523614 10.1433ZM11.4402 1.7942C11.1505 2.46996 10.6462 3.35308 9.77734 4.22169C8.90398 5.09524 7.66269 5.95318 5.90445 6.5698C2.33596 7.82088 1.33892 9.869 1.06073 10.8615C1.07388 10.8747 1.08518 10.8885 1.09795 10.9014C3.00925 12.8122 6.75326 12.1669 9.46068 9.45977C11.8698 7.05112 12.6446 3.82281 11.4402 1.7942Z" />
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="titled-rating-list">
+                                    <li class="titled-rating-item">
+                                        <div class="titled-rating">
+                                            <span class="rating-title">Кислинка</span>
+                                            <ul class="circles-list">
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="titled-rating-item">
+                                        <div class="titled-rating">
+                                            <span class="rating-title">Горчинка</span>
+                                            <ul class="circles-list">
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="titled-rating-item">
+                                        <div class="titled-rating">
+                                            <span class="rating-title">Насыщенность</span>
+                                            <ul class="circles-list">
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item circle-item-selected">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                                <li class="circle-item">
+                                                    <i class="fas fa-circle"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3 class="discount__item__title">Colombia Supremo</h3>
+                        <p class="discount__item__description">Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+                        <footer class="discount__item__footer">
+                            <div class="discount__item__price">
+                                <s class="old-price">350 ₽</s>
+                                <span class="discount-price">250 ₽</span>
+                            </div>
+                            <button class="button discount__item__button" id="to-basket-button">В корзину</button>
+                        </footer>
+                    </li>
+                </ul>
+            </section>
+            <section class="advantages">
+                <h2 class="section-title advantages__title">
+                    Почему стоит работать именно с нами?
+                </h2>
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <div class="advantages__item__icon-container">
+                            <img class="advantages__item__icon" src="./images/advantages/coffee.svg"
+                                alt="Иконка консультаций">
+                        </div>
+                        <div class="advantages__item__container">
+                            <h3 class="advantages__item__title">
+                                Всегда свежая обжарка
+                            </h3>
+                            <p class="advantages__item__description">
+                                Подбор степени обжарки под каждый сорт кофе. Всегда свежая обжарка
+                            </p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantages__item__icon-container">
+                            <img class="advantages__item__icon" src="./images/advantages/discount.svg"
+                                alt="Иконка консультаций">
+                        </div>
+                        <div class="advantages__item__container">
+                            <h3 class="advantages__item__title">
+                                Лучшие цены на продукцию
+                            </h3>
+                            <p class="advantages__item__description">
+                                Благодаря крупным объемам производства
+                                мы даем лучшие цены на нашу продукцию
+                            </p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantages__item__icon-container">
+                            <img class="advantages__item__icon" src="images/advantages/support.svg"
+                                alt="Иконка консультаций">
+                        </div>
+                        <div class="advantages__item__container">
+                            <h3 class="advantages__item__title">
+                                Консультации 24/7
+                            </h3>
+                            <p class="advantages__item__description">
+                                Наши специалисты готовы всегда помочь
+                                и подсказать вам с выбором кофе
+                                или другой продукции.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="roasting">
+                <h2 class="section-title roasting__title">
+                    Как мы обжариваем наш кофе:
+                </h2>
+                <p class="roasting__description">
+                    Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в
+                    Москве.
+                    Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет
+                    немецкое
+                    оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой
+                    продукции. </p>
+                <p class="roasting__description">
+                    Кофе поставляется в контейнерах напрямую с плантаций
+                    по всему миру. Компания имеет долгосрочные контракты
+                    по поставке продукции. Каждая партия проходит строгий контроль на заводе для проверки зерна. Зеленое
+                    зерно обжаривается, проходит процесс дегазации
+                    и тут же отправляется клиентам. Наши обжарщики прошли обучение в России и за рубежом. У нас свой
+                    подход
+                    к каждой партии зерна.
+                </p>
+                <p class="roasting__description">
+                    Мы раскрываем вкус каждого сорта кофе.
+                </p>
+                <a class="button roasting__button" href="#">Посмотреть каталог</a>
+            </section>
+            <section class="news">
+                <h2 class="section-title">Новости компании</h2>
+                <div class="carousel-inputs">
+                    <button id="left-arrow">
+                        <img src="./images/carousel/left-arrow.svg" alt="Left arrow carousel">
+                    </button>
+                    <button id="right-arrow">
+                        <img src="./images/carousel/right-arrow.svg" alt="Right arrow carousel">
+                    </button>
+                </div>
+                <ul class="news__list">
+                    <li class="news__item">
+                        <img class="news__preview" src="./images/news/preview.png" alt="Танзанский кофе">
+                        <article class="news__article">
+                            <h3 class="news__title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h3>
+                            <div class="news__paragraphs">
+                                <p class="news__description">Танзания – красивая африканская страна. Именно здесь
+                                    расположены
+                                    легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.</p>
+                                <p class="news__description">Но наш интерес вызван не столько природными красотами,
+                                    сколько
+                                    кофе...</p>
+                            </div>
+                            <a class="news__continue-link" href="#">
+                                <span>Подробнее</span>
+                                <img src="./images/news/link-arrow.svg" alt="Стрелка подробнее">
+                            </a>
+                        </article>
+                    </li>
+                    <li class="news__item">
+                        <article class="news__article">
+                            <h3 class="news__title">Африканский кофе Кения АА</h3>
+                            <div class="news__paragraphs">
+                                <p class="news__description">Кения АА – у этого кофе, из африканской страны, репутация
+                                    одного из самых вкусных и ярких сортов в мире. Многие обжарщики высоко оценивают
+                                    местные разновидности высокогорной арабики.</p>
+                            </div>
+                            <a class="news__continue-link" href="#">
+                                <span>Подробнее</span>
+                                <img src="./images/news/link-arrow.svg" alt="Стрелка подробнее">
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+                <a class="news__all-link" href="#">Читать все</a>
+            </section>
+            <section class="instagram">
+                <h2 class="section-title">Мы в Instagram</h2>
+                <a class="instagram-link" href="#">
+                    <img src="./images/instagram_icon.svg" alt="Instagram icon">
+                </a>
+                <ul class="instagram-photo-list">
+                    <li class="instagram-photo-item">
+                        <img src="./images/instagram/plug.svg" alt="Фото-заглушка">
+                    </li>
+                    <li class="instagram-photo-item">
+                        <img src="./images/instagram/plug.svg" alt="Фото-заглушка">
+                    </li>
+                </ul>
+                <button id="change-inst-photo-btn">
+                    <img src="./images/instagram/arrow.svg" alt="Сменить фотографию">
+                </button>
+            </section>
+            <section class="mailing">
+                <img class="mailing-image" src="images/cup-and-coffee.png" alt="Кружка эспрессо и кофейные зерна">
+                <h2 class="section-title mailing-title">Подписка на новости и рассылку</h2>
+                <p class="mailing-description">
+                    Подпишитесь на нашу рассылку прямо сейчас
+                    и будьте в курсе новых поставок, скидок
+                    и эксклюзивных предложений.
+                </p>
+                <form class="mailing-form" method="POST">
+                    <input class="input" type="email" placeholder="Ваш email">
+                    <button type="submit" class="button mailing-submit">Подписаться</button>
+                </form>
+                <p class="mailing-form-description">
+                    Нажимая на кнопку “Подписаться”, вы принимаете правила <a href="link" class="link">пользовательского
+                        соглашения</a>
+                </p>
+            </section>
+        </main>
+        <footer class="footer">
+            <nav class="footer-navigation">
+                <ul class="footer-navigation-list">
+                    <li class="footer-navigation-item">
+                        <a class="footer-navigation-link" href="#">Каталог товаров</a>
+                    </li>
+                    <li class="footer-navigation-item">
+                        <a class="footer-navigation-link" href="#">Блог</a>
+                    </li>
+                    <li class="footer-navigation-item">
+                        <a class="footer-navigation-link" href="#">Каталог</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="footer-logo-link">
+                <img src="/images/logo.png" alt="Логотип Miller">
             </a>
-            <ul class="instagram-photo-list">
-                <li class="instagram-photo-item">
-                    <img src="./images/instagram/plug.svg" alt="Фото-заглушка">
-                </li>
-                <li class="instagram-photo-item">
-                    <img src="./images/instagram/plug.svg" alt="Фото-заглушка">
-                </li>
-            </ul>
-            <button id="change-inst-photo-btn">
-                <img src="./images/instagram/arrow.svg" alt="Сменить фотографию">
-            </button>
-        </section>
-        <section class="mailing">
-            <img class="mailing-image" src="images/cup-and-coffee.png" alt="Кружка эспрессо и кофейные зерна">
-            <h2 class="section-title mailing-title">Подписка на новости и рассылку</h2>
-            <p class="mailing-description">
-                Подпишитесь на нашу рассылку прямо сейчас
-                и будьте в курсе новых поставок, скидок
-                и эксклюзивных предложений.
-            </p>
-            <form class="mailing-form" method="POST">
-                <input class="input" type="email" placeholder="Ваш email">
-                <button type="submit" class="button mailing-submit">Подписаться</button>
-            </form>
-            <p class="mailing-form-description">
-                Нажимая на кнопку “Подписаться”, вы принимаете правила <a href="link" class="link">пользовательского
-                    соглашения</a>
-            </p>
-        </section>
-    </main>
-    <footer class="footer">
-        <nav class="footer-navigation">
-            <ul class="footer-navigation-list">
-                <li class="footer-navigation-item">
-                    <a class="footer-navigation-link" href="#">Каталог товаров</a>
-                </li>
-                <li class="footer-navigation-item">
-                    <a class="footer-navigation-link" href="#">Блог</a>
-                </li>
-                <li class="footer-navigation-item">
-                    <a class="footer-navigation-link" href="#">Каталог</a>
-                </li>
-            </ul>
-        </nav>
-        <a href="#" class="footer-logo-link">
-            <img src="/images/logo.png" alt="Логотип Miller">
-        </a>
-    </footer>
-</div>
+        </footer>
+    </div>
     <script src="scripts/menu-mobile.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

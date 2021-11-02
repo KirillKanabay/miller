@@ -14,3 +14,13 @@ $(document).ready(function () {
         arrows: false,
     });
 });
+
+$(document).ready(function () {
+    $('.news__list').slick({
+        infinite: true,
+        arrows: true,
+        prevArrow: $('#left-arrow'),
+        nextArrow: $('#right-arrow')
+    });
+});
+
