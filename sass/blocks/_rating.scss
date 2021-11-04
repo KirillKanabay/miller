@@ -81,3 +81,57 @@
     margin-bottom: 9px;
 }
 
+@media screen and (min-width: 768px) {   
+    .star-item{
+        font-size: 18px;
+    }
+
+    .rating-values{
+        margin-top: 6px;
+    }
+
+    .rating-mark{
+        font-size: 14px;
+        line-height: 16.93px;
+    }
+    
+    .rating-count{
+        font-size: 10px;
+        line-height: 11.77px;
+    }
+
+    .titled-rating-item{
+        margin-bottom: 12px;
+    }
+
+    .rating-title{
+        font-size: 12px;
+        line-height: 14.12px;
+        margin-bottom: 6px;
+    }
+
+    .circle-item{
+        height: 6px;
+        margin-right: 2px;
+    }
+
+    .circle-item i{
+        font-size: 6px;
+    }
+
+    .roasting-list{
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .roasting-item{
+        margin-right: 6px;
+        height: 13px;
+    }
+
+    .roasting-item svg{
+        height: 13px;
+        width: 13px;
+    }
+
+}

@@ -8,7 +8,7 @@ $(document).ready(function () {
         mobileFirst:true,
         responsive: [
             {
-              breakpoint: 768,
+              breakpoint: 767,
               settings: {
                 infinite: false,
               },
@@ -21,6 +21,7 @@ $(document).ready(function () {
     $('.discount__list').slick({
         infinite: false,
         arrows: false,
+        variableWidth: true
     });
 });
 
