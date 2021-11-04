@@ -1,10 +1,19 @@
 $(document).ready(function () {
     $('.catalog__carousel').slick({
         dots: true,
-        Infinity: true,
+        infinite: true,
         arrows: false,
         centerMode: true,
-        centerPadding: '50px',
+        variableWidth: true,
+        mobileFirst:true,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                infinite: false,
+              },
+            },
+          ]
     });
 });
 

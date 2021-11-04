@@ -1,8 +1,7 @@
 .intro {
     position: relative;
     padding: 0 18px;
-    background: url("../images/coffee.png") right top 180px no-repeat,
-                url("../images/bg-1-mobile.svg") right top -35px no-repeat;
+    background: url("../images/bg-1-mobile.svg") right top -35px no-repeat;
     overflow: hidden;
 
     &__slider{
@@ -14,6 +13,7 @@
         font-size: 30px;
         font-weight: 900;
         line-height: 37px;
+        width: 100px;
     }
 
     &__description{
@@ -29,11 +29,10 @@
     }
 
     &__image{
-        width: 363px;
-        height: 242px;
+        height: 378px;
         position: absolute;
-        top: 220px;
-        right: -115px;
+        top: 170px;
+        right: -140px;
     }
 
     &__button {
@@ -49,8 +48,7 @@
     .intro{
         padding: 0 35px;
 
-        background: url("/images/coffee-bg-tablet.png") right top 240px no-repeat,
-                    url("/images/bg-1-tablet.svg") right top -90px no-repeat;
+        background: url("/images/bg-1-tablet.svg") right top -90px no-repeat;
 
         &__title{
             margin-top: 130px;
@@ -72,11 +70,10 @@
         }
     
         &__image{
-            width: 589px;
-            height: 393px;
+            height: 615px;
             position: absolute;
-            top: 303px;
-            right: -65px;
+            top: 230px;
+            right: -110px;
         }
     
         &__button {
