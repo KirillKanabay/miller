@@ -2,8 +2,12 @@
     position: relative;
     padding: 0 18px;
     background: url("../images/coffee.png") right top 180px no-repeat,
-                url("../images/bg-1.svg") right -320px top -35px no-repeat;
+                url("../images/bg-1-mobile.svg") right top -35px no-repeat;
     overflow: hidden;
+
+    &__slider{
+        min-height: 220px;
+    }
 
     &__title{
         margin-top: 60px;
@@ -29,7 +33,7 @@
         height: 242px;
         position: absolute;
         top: 220px;
-        right: -140px;
+        right: -115px;
     }
 
     &__button {

@@ -4,7 +4,11 @@
     padding-bottom: 64px;
     background-color: #FFF7E1;
     background: url("../images/advantages/bg-top.svg") center top no-repeat,
-        url("../images/advantages/bg-center.svg") center top 62px no-repeat;
+    linear-gradient(to bottom,
+    #fff 0px,
+    #Fff 13%,
+    #FFF7E1 10%,
+    #FFF7E1 100%) top center no-repeat;;
     background-size: 100%;
 
     &__title {

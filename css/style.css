@@ -304,11 +304,16 @@ label > input[type="radio"] + * {
 .titled-rating-item {
   margin-bottom: 9px; }
 
+.background-overlay {
+  background: url("../images/overlay.png") top 250px left no-repeat; }
+
 .intro {
   position: relative;
   padding: 0 18px;
-  background: url("../images/coffee.png") right top 180px no-repeat, url("../images/bg-1.svg") right -320px top -35px no-repeat;
+  background: url("../images/coffee.png") right top 180px no-repeat, url("../images/bg-1-mobile.svg") right top -35px no-repeat;
   overflow: hidden; }
+  .intro__slider {
+    min-height: 220px; }
   .intro__title {
     margin-top: 60px;
     font-size: 30px;
@@ -327,7 +332,7 @@ label > input[type="radio"] + * {
     height: 242px;
     position: absolute;
     top: 220px;
-    right: -140px; }
+    right: -115px; }
   .intro__button {
     margin-top: 70px; }
   .intro__slider-inputs {
@@ -370,6 +375,7 @@ label > input[type="radio"] + * {
     padding-top: 30px !important;
     padding-bottom: 15px !important; }
   .catalog__slide {
+    background: white;
     height: 269px;
     padding: 15px 20px 0px 20px;
     box-shadow: 0px 0px 15px rgba(146, 146, 146, 0.2);
@@ -446,6 +452,7 @@ label > input[type="radio"] + * {
     margin-bottom: 13px;
     list-style-type: none; }
   .discount__item {
+    background: white;
     position: relative;
     width: 250px;
     border-radius: 12px;
@@ -506,7 +513,7 @@ label > input[type="radio"] + * {
   padding-top: 47px;
   padding-bottom: 64px;
   background-color: #FFF7E1;
-  background: url("../images/advantages/bg-top.svg") center top no-repeat, url("../images/advantages/bg-center.svg") center top 62px no-repeat;
+  background: url("../images/advantages/bg-top.svg") center top no-repeat, linear-gradient(to bottom, #fff 0px, #Fff 13%, #FFF7E1 10%, #FFF7E1 100%) top center no-repeat;
   background-size: 100%; }
   .advantages__title {
     width: 230px; }
@@ -545,7 +552,7 @@ label > input[type="radio"] + * {
 .roasting {
   padding: 0 18px;
   padding-top: 80px;
-  background: url("../images/advantages/bg-bottom.svg") center top no-repeat, url("../images/roasting/bg-bottom.svg") center bottom 23px no-repeat, url("../images/roasting/bg-center.png") center bottom 23px no-repeat;
+  background: url("../images/advantages/bg-bottom.svg") center top no-repeat, url("../images/roasting/bg-bottom.svg") center bottom 7px no-repeat, url("../images/roasting/bg-center.png") center bottom 23px no-repeat;
   background-size: 100%; }
   .roasting__title {
     color: #fff;
@@ -614,7 +621,8 @@ label > input[type="radio"] + * {
   padding: 0 18px;
   padding-top: 24px;
   padding-bottom: 65px;
-  background: url("../images/instagram/iphone.png") top 49px right -35px no-repeat, url("../images/instagram/bg-middle.svg") top 110px center no-repeat, url("../images/instagram/bg-bottom.svg") bottom right no-repeat, linear-gradient(to bottom, #FFF7E1 0px, #FFF7E1 50%, #F9B300 50%, #F9B300 87%, #fff 87%, #fff 100%) top center no-repeat; }
+  background: url("../images/instagram/iphone.png") top 49px right -35px no-repeat, url("../images/instagram/bg.svg") top 110px center no-repeat;
+  background-size: auto, 100%; }
   .instagram__link {
     display: block;
     margin-top: 20px; }
