@@ -38,3 +38,30 @@
         height: 50px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .footer{
+        margin-top: 100px;
+        padding-bottom: 80px;
+        
+        &__navigation{
+            &__item{
+                margin-right: 60px;
+            }
+    
+            &__link{
+                font-size: 25px;
+                line-height: 29.43px;
+            }
+        }
+    
+        &__logo-link{
+            margin-top: 50px;
+        }
+    
+        &__logo{
+            width: 225px;
+            height: 102px;
+        }
+    }    
+}

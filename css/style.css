@@ -39,6 +39,53 @@
       width: 59px;
       height: 30px; } }
 
+@media screen and (min-width: 980px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 85px 13px 85px;
+    height: 113px;
+    box-shadow: 0 0 20px rgba(157, 157, 157, 0.25); }
+    .header__container {
+      display: flex;
+      align-items: center; }
+    .header__link-list {
+      display: flex;
+      list-style: none; }
+    .header__link-item {
+      margin-right: 30px; }
+      .header__link-item:last-child {
+        margin-right: 0; }
+      .header__link-item--search {
+        margin-right: 0; }
+    .header__logo {
+      width: 179px;
+      height: 80px; }
+    .header__link--search {
+      display: none; }
+    .header__link img {
+      width: 22px;
+      height: 22px; }
+    .header__search-form {
+      width: 100%;
+      margin: 0 20px; }
+    .header__search-input {
+      background: url("../images/header/search-input-icon.svg") left 30px center no-repeat;
+      padding-left: 72px;
+      width: 100%;
+      height: 42px;
+      box-shadow: 0px 0px 20px rgba(157, 157, 157, 0.25);
+      border-radius: 30px;
+      border: none;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20.8px; }
+      .header__search-input::placeholder {
+        color: #C4C4C4; }
+    .header #open-menu-mobile-button {
+      display: none; } }
+
 .menu-mobile {
   position: absolute;
   min-height: 100vh;
@@ -155,6 +202,10 @@
     .social-menu__item img {
       width: 102px;
       height: 102px; } }
+
+@media screen and (min-width: 980px) {
+  .menu-mobile {
+    display: none; } }
 
 .slick-dots {
   list-style: none;
@@ -948,6 +999,21 @@ label > input[type="radio"] + * {
   .footer__logo {
     width: 110px;
     height: 50px; }
+
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 100px;
+    padding-bottom: 80px; }
+    .footer__navigation__item {
+      margin-right: 60px; }
+    .footer__navigation__link {
+      font-size: 25px;
+      line-height: 29.43px; }
+    .footer__logo-link {
+      margin-top: 50px; }
+    .footer__logo {
+      width: 225px;
+      height: 102px; } }
 
 * {
   font-family: "Gilroy", sans-serif;
