@@ -816,8 +816,8 @@ label > input[type="radio"] + * {
   padding: 0 18px;
   padding-top: 24px;
   padding-bottom: 65px;
-  background: url("../images/instagram/iphone.png") top 49px right -35px no-repeat, url("../images/instagram/bg.svg") top 110px center no-repeat;
-  background-size: auto, 100%; }
+  background: url("../images/instagram/iphone.png") top 49px right -35px no-repeat, url("../images/instagram/bg.svg") top 110px center no-repeat, linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
+  background-size: auto, 100%, auto; }
   .instagram__link {
     display: block;
     margin-top: 20px; }
@@ -847,6 +847,30 @@ label > input[type="radio"] + * {
     height: 40px;
     border-radius: 50%;
     border: none; }
+
+@media screen and (min-width: 768px) {
+  .instagram {
+    padding: 0 35px;
+    padding-top: 50px;
+    padding-bottom: 160px;
+    background: url("../images/instagram/iphone-tablet.png") top 60px right no-repeat, url("../images/instagram/bg.svg") top 230px center no-repeat, linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
+    background-size: auto, 100%, auto; }
+    .instagram__link {
+      margin-top: 40px; }
+      .instagram__link img {
+        width: 81px;
+        height: 81px; }
+    .instagram__photo-list {
+      margin-top: 91px; }
+    .instagram__photo {
+      width: 340px;
+      height: 389px; }
+    .instagram__next-button {
+      margin-top: 32px;
+      width: 80px;
+      height: 80px; }
+      .instagram__next-button img {
+        width: 30px; } }
 
 .mailing {
   padding: 0 18px; }

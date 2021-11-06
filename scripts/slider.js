@@ -41,6 +41,21 @@ $(document).ready(function () {
         nextArrow: null,
         slidesToShow: 2,
         prevArrow: $('#change-inst-photo-btn'),
+        mobileFirst:true,
+        responsive: [
+            {
+                breakpoint: 550,
+                settings: {
+                  slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+        ]
     });
 });
 
