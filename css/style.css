@@ -563,7 +563,8 @@ label > input[type="radio"] + * {
 @media screen and (min-width: 768px) {
   .discount {
     margin-top: 100px;
-    padding: 0 36px; }
+    padding: 0 36px;
+    margin-bottom: 137px; }
     .discount__description {
       width: 470px;
       margin-top: 50px;
@@ -605,7 +606,7 @@ label > input[type="radio"] + * {
         .discount__item__price .old-price {
           font-size: 22px;
           line-height: 25.89px;
-          margin-bottom: -10px; }
+          margin-bottom: -6px; }
         .discount__item__price .discount-price {
           font-size: 26px;
           line-height: 32.45px; }
@@ -631,7 +632,7 @@ label > input[type="radio"] + * {
   padding-top: 47px;
   padding-bottom: 64px;
   background-color: #FFF7E1;
-  background: url("../images/advantages/bg-top.svg") center top no-repeat, linear-gradient(to bottom, #fff 0px, #Fff 13%, #FFF7E1 10%, #FFF7E1 100%) top center no-repeat;
+  background: url("../images/advantages/bg-center.svg") center top no-repeat, linear-gradient(to bottom, #fff 0px, #Fff 30%, #FFF7E1 30%, #FFF7E1 100%) top center no-repeat;
   background-size: 100%; }
   .advantages__title {
     width: 230px; }
@@ -666,6 +667,32 @@ label > input[type="radio"] + * {
       font-weight: 500;
       font-size: 12px;
       line-height: 15.6px; }
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding: 0 35px;
+    padding-top: 65px;
+    padding-bottom: 61px; }
+    .advantages__title {
+      width: 460px; }
+    .advantages__list {
+      margin-top: 61px; }
+    .advantages__item {
+      margin-bottom: 60px; }
+      .advantages__item__icon-container {
+        width: 81px;
+        height: 81px; }
+      .advantages__item__icon {
+        height: 30px; }
+      .advantages__item__container {
+        margin-left: 40px; }
+      .advantages__item__title {
+        font-size: 25px;
+        line-height: 30.22px; }
+      .advantages__item__description {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 26px; } }
 
 .roasting {
   padding: 0 18px;

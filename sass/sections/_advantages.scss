@@ -3,11 +3,11 @@
     padding-top: 47px;
     padding-bottom: 64px;
     background-color: #FFF7E1;
-    background: url("../images/advantages/bg-top.svg") center top no-repeat,
+    background: url("../images/advantages/bg-center.svg") center top no-repeat,
     linear-gradient(to bottom,
     #fff 0px,
-    #Fff 13%,
-    #FFF7E1 10%,
+    #Fff 30%,
+    #FFF7E1 30%,
     #FFF7E1 100%) top center no-repeat;;
     background-size: 100%;
 
@@ -59,6 +59,50 @@
             font-weight: 500;
             font-size: 12px;
             line-height: 15.6px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .advantages {
+        padding: 0 35px;
+        padding-top: 65px;
+        padding-bottom: 61px;
+    
+        &__title {
+            width: 460px;
+        }
+    
+        &__list {
+            margin-top: 61px;
+        }
+    
+        &__item {
+            margin-bottom: 60px;
+            
+            &__icon-container {
+                width: 81px;
+                height: 81px;
+            }
+    
+            &__icon {
+                height: 30px;
+            }
+    
+            &__container {  
+                margin-left: 40px;
+            }
+    
+            &__title {
+                font-size: 25px;
+                line-height: 30.22px;
+            }
+    
+            &__description {
+                margin-top: 20px;
+                font-size: 20px;
+                line-height: 26px;
+            }
         }
     }
 }
