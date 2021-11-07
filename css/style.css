@@ -8,12 +8,12 @@
   .header__container {
     display: flex;
     align-items: center; }
-  .header__link-list {
+  .header__link-icon-list {
     display: flex;
     list-style: none; }
-  .header__link-item {
+  .header__link-icon-item {
     margin-right: 30px; }
-    .header__link-item:last-child {
+    .header__link-icon-item:last-child {
       margin-right: 0; }
   .header__logo {
     width: 110px;
@@ -26,12 +26,12 @@
   .header {
     padding: 20px 34px 20px 34px;
     height: 143px; }
-    .header__link-item {
+    .header__link-icon-item {
       margin-right: 60px; }
     .header__logo {
       width: 225px;
       height: 102px; }
-    .header__link > img {
+    .header__link-icon > img {
       width: 34px; }
   #open-menu-mobile-button {
     margin-right: 89px; }
@@ -41,30 +41,15 @@
 
 @media screen and (min-width: 980px) {
   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px 85px 13px 85px;
     height: 113px;
     box-shadow: 0 0 20px rgba(157, 157, 157, 0.25); }
-    .header__container {
-      display: flex;
-      align-items: center; }
-    .header__link-list {
-      display: flex;
-      list-style: none; }
-    .header__link-item {
-      margin-right: 30px; }
-      .header__link-item:last-child {
-        margin-right: 0; }
-      .header__link-item--search {
-        margin-right: 0; }
+    .header__link-icon-item {
+      margin-right: 40px; }
     .header__logo {
       width: 179px;
       height: 80px; }
-    .header__link--search {
-      display: none; }
-    .header__link img {
+    .header__link-icon img {
       width: 22px;
       height: 22px; }
     .header__search-form {
@@ -83,6 +68,19 @@
       line-height: 20.8px; }
       .header__search-input::placeholder {
         color: #C4C4C4; }
+    .header__link-list {
+      display: flex;
+      list-style: none; }
+    .header__link-item {
+      margin-right: 66px; }
+      .header__link-item:last-child {
+        margin-right: 0px; }
+    .header__link {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21.19px;
+      color: #181818; }
     .header #open-menu-mobile-button {
       display: none; } }
 

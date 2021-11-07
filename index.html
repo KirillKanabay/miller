@@ -83,23 +83,42 @@
                 </button>
                 <img class="header__logo" src="images/logo.png" alt="Логотип Miller">
             </div>
-            <form method="get" class="header__search-form">
-                <input id="search" name="search" type="text" class="header__search-input" placeholder="Поиск по товарам">
+            <form method="get" class="header__search-form hidden" id="search-form">
+                <input id="search-input" name="search" type="text" class="header__search-input" placeholder="Поиск по товарам">
             </form>
             <div class="header__container">
                 <ul class="header__link-list">
-                    <li class="header__link-item header__link-item--search">
-                        <a class="header__link header__link--search" href="#">
-                            <img src="images/search_icon.svg" alt="Поиск">
+                    <li class="header__link-item header__link-item--catalog">
+                        <a class="header__link header__link--catalog" href="#">
+                            Каталог товаров
                         </a>
                     </li>
-                    <li class="header__link-item header__link-item--basket">
-                        <a class="header__link header__link--basket" href="#">
+                    <li class="header__link-item header__link-item--blog">
+                        <a class="header__link header__link--blog" href="#">
+                            Блог
+                        </a>
+                    </li>
+                    <li class="header__link-item header__link-item--contacts">
+                        <a class="header__link header__link--contacts" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__container">
+                <ul class="header__link-icon-list">
+                    <li class="header__link-icon-item header__link-icon-item--search">
+                        <button id="search-button" class="header__link-icon header__link-icon--search transparent-button" href="#">
+                            <img src="images/search_icon.svg" alt="Поиск">
+                        </button>
+                    </li>
+                    <li class="header__link-icon-item header__link-icon-item--basket">
+                        <a class="header__link-icon header__link-icon--basket" href="#">
                             <img src="images/basket_icon.svg" alt="Корзина">
                         </a>
                     </li>
-                    <li class="header__link-item header__link-item--user">
-                        <a class="header__link header__link--user" href="#">
+                    <li class="header__link-icon-item header__link-icon-item--user">
+                        <a class="header__link-icon header__link-icon--user" href="#">
                             <img src="images/user_icon.svg" alt="Личный кабинет">
                         </a>
                     </li>

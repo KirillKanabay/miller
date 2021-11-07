@@ -13,12 +13,12 @@
         align-items: center;
     }
 
-    &__link-list{
+    &__link-icon-list{
         display: flex;
         list-style: none;
     }
 
-    &__link-item{
+    &__link-icon-item{
         margin-right: 30px;
         &:last-child{
             margin-right: 0;
@@ -40,7 +40,7 @@
         padding: 20px 34px 20px 34px;
         height: 143px;    
     
-        &__link-item{
+        &__link-icon-item{
             margin-right: 60px;
         }
 
@@ -49,7 +49,7 @@
             height: 102px;
         }
 
-        &__link > img{
+        &__link-icon > img{
             width: 34px;
         }
     }
@@ -64,34 +64,14 @@
 }
 
 @media screen and (min-width: 980px) {
-    .header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
+    .header{        
         padding: 10px 85px 13px 85px;
         height: 113px;
         
         box-shadow: 0 0 20px $dbs;
     
-        &__container{
-            display: flex;
-            align-items: center;
-        }
-    
-        &__link-list{
-            display: flex;
-            list-style: none;
-        }
-    
-        &__link-item{
-            margin-right: 30px;
-            &:last-child{
-                margin-right: 0;
-            }
-            &--search{
-                margin-right: 0;
-            }
+        &__link-icon-item{
+            margin-right: 40px;
         }
     
         &__logo{
@@ -99,10 +79,7 @@
             height: 80px;
         }
 
-        &__link{
-            &--search{
-                display: none;
-            }
+        &__link-icon{
             & img{
                 width: 22px;
                 height: 22px;
@@ -133,6 +110,26 @@
             &::placeholder {
                 color: #C4C4C4;
             }
+        }
+
+        &__link-list{
+            display: flex;
+            list-style: none;
+        }
+
+        &__link-item{
+            margin-right: 66px;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+
+        &__link{
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21.19px;
+            color: $black; 
         }
 
         #open-menu-mobile-button{
