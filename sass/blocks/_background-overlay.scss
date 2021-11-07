@@ -1,3 +1,10 @@
 .background-overlay{
     background: url("../images/overlay.png") top 250px left no-repeat;
 }
+
+@media screen and (min-width: 980px){
+    .top-background-overlay{
+        background: url("../images/overlay/top-overlay-laptop.svg") top right no-repeat;
+    }
+}
+

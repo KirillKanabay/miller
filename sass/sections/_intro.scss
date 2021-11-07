@@ -7,7 +7,7 @@
     &__slider{
         min-height: 220px;
     }
-
+    
     &__title{
         margin-top: 60px;
         font-size: 30px;
@@ -86,3 +86,76 @@
     }
 }
 
+@media screen and (min-width: 980px) {
+    
+    .intro {
+        padding: 0 86px;
+        background: none;
+    
+        &__slider{
+            min-height: auto;
+        }
+    
+        &__title{
+            margin-top: 100px;
+            font-size: 56px;
+            font-weight: 900;
+            line-height: 69.89px;
+            width: 70%;
+        }
+    
+        &__description{
+            margin-top: 41px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 23.4px;
+            width: 50%;
+    
+            &--coffee{
+                width: 50%;
+            }
+        }
+    
+        &__image{
+            height:500px;
+            position: absolute;
+            top: 55px;
+            right: -35px;
+        }
+    
+        &__slider-inputs {
+            position: absolute;
+            margin-top: 0;
+            top: 63px;
+            right: 85px;
+        }
+
+        &__button {
+            margin-top: 58px;
+            width: 283px !important;
+            height: 56px !important;
+
+            font-size: 21px !important;
+            line-height: 25.39px !important;
+        }
+    }
+
+    
+
+    label>input[type="radio"]+*::before {
+        width: 14px;
+        height: 14px;
+        background-color: #fff;
+    }
+    
+    label>input[type="radio"]:checked+*::before {
+        background-color: $black;
+    }
+    
+    label>input[type="radio"]+* {
+        display: inline-block;
+        margin-right: 20px;
+        font-size: 0;
+    }
+    
+}
