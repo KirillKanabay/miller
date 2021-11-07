@@ -45,6 +45,19 @@
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .slick-dots{
+        li{
+            margin-right: 30px;
+        }
+
+        button{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
 label>input[type="radio"] {
     display: none;
 }

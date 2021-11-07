@@ -12,8 +12,8 @@ const closeMenu = (e)=>{
 
 const openMenu = (e) =>{
    e.preventDefault();
-   if(body.clientWidth == 980){
-      break;
+   if(body.clientWidth == 1024){
+      return;
    }
    mobileMenu.classList.remove("hidden");
    pageContainer.classList.add("hidden");
