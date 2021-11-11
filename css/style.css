@@ -796,6 +796,7 @@ label > input[type="radio"] + * {
 @media screen and (min-width: 1024px) {
   .discount {
     margin-top: 0px;
+    margin-bottom: 0px !important;
     padding: 0 86px;
     margin-bottom: 137px; }
     .discount__description {
@@ -952,6 +953,50 @@ label > input[type="radio"] + * {
         margin-top: 20px;
         font-size: 20px;
         line-height: 26px; } }
+
+@media screen and (min-width: 1024px) {
+  .advantages {
+    padding: 0 86px;
+    padding-top: 47px;
+    padding-bottom: 64px;
+    background-color: #FFF7E1;
+    background: url("../images/advantages/bg-laptop.svg") center top no-repeat;
+    background-size: 100%; }
+    .advantages__title {
+      width: 400px;
+      font-size: 35px;
+      line-height: 43.68px; }
+    .advantages__list {
+      margin-top: 30px;
+      list-style: none; }
+    .advantages__item {
+      margin-bottom: 30px;
+      display: flex;
+      align-items: flex-start; }
+      .advantages__item:last-child {
+        margin-bottom: 0px; }
+      .advantages__item__icon-container {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #F9B300;
+        border-radius: 50%; }
+      .advantages__item__icon {
+        height: 16px; }
+      .advantages__item__container {
+        margin-left: 20px; }
+      .advantages__item__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19.34px; }
+      .advantages__item__description {
+        margin-top: 13px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15.6px; } }
 
 .roasting {
   padding: 0 18px;
