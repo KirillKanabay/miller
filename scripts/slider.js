@@ -28,7 +28,20 @@ $('.catalog__carousel').slick({
 $('.discount__list').slick({
     infinite: false,
     arrows: false,
-    variableWidth: true
+    variableWidth: true,
+    mobileFirst:true,
+    responsive: [
+        {
+            breakpoint: 1023,
+            settings: {
+                slidesToShow: 3,
+                arrows: true,
+                infinite: true,
+                prevArrow: $('#discount__left-arrow'),
+                nextArrow: $('#discount__right-arrow')
+            }
+        }
+      ]
 });
 
 $('.news__list').slick({

@@ -124,6 +124,15 @@
         }
     }
 
+    &__all-link{
+        display: none;
+        margin-top: 7px;
+        color: $black;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16.48px;
+    }
+
     .weight-select {
         position: absolute;
         top: 14px;
@@ -134,7 +143,15 @@
         padding-top: 42px;
         overflow: visible !important;
     }
+
+  
 }
+
+#discount__right-arrow,
+#discount__left-arrow{
+    display: none;
+}
+
 
 @media screen and (min-width: 768px) {
     .discount {
@@ -232,5 +249,142 @@
         .slick-list{
             padding-top: 80px;
         }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .discount {
+        margin-top: 0px;
+        padding: 0 86px;
+        margin-bottom: 137px;
+        &__description {
+            width: 70%;
+            margin-top: 39px;
+            font-size: 18px;
+            line-height: 23.4px;
+        }
+
+        &__span {
+            top: 37px;
+            left: 25px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+    
+        &__percent {
+            left: 25px;
+            top: -25px;
+            font-size: 24.8px;
+            line-height: 30px;
+            width: 50px;
+            height: 50px;
+        }
+        
+        &__list {
+            margin-left: auto;
+            grid-template-columns: repeat(2, 280px);
+            overflow: hidden;
+            padding: 20px;
+            margin-top: 34px;
+        }
+
+        &__item {
+            width: 280px;
+            border-radius: 14px;
+            box-shadow: 0px 0px 20px rgba(201, 201, 201, 0.25);
+            padding: 66px 25px 37px 25px;
+    
+            &__image {
+                width: 120px;
+                height: 218px;
+                margin-right: 16px;
+            }
+    
+            &__title {
+                margin-top: 28px;
+                font-size: 18px;
+                line-height: 22.46px;
+            }
+    
+            &__description {
+                margin-top: 8px;
+                font-size: 12px;
+                line-height: 14.12px;
+            }
+    
+            &__price {
+                margin-top: 1px;
+    
+                .old-price {
+                    font-size: 18px;
+                    line-height: 21.19px;
+                    margin-bottom: -3.19px;
+                }
+    
+                .discount-price {
+                    font-size: 24px;
+                    line-height: 29.9px;
+                }
+            }
+    
+            &__button {
+                margin-top: 20px;
+                height: 33px !important;
+                font-size: 12px !important;
+                line-height: 14.51px !important;
+                width: 125px !important;
+            }
+        }
+        
+        &__slider-container{
+            display: flex;
+            align-items: center;
+        }
+
+        .weight-select {
+            top: 14px;
+            right: 25px;
+
+            width: 93px;
+            height: 23px;
+
+            font-size: 12px;
+            line-height: 14px;
+
+            padding: 4px 19px;
+        }
+    
+        .slick-list{
+            padding-top: 54px;
+        }
+
+        &__all-link{
+            display: block;
+        }
+    }
+
+    #discount__right-arrow,
+    #discount__left-arrow{
+        display: block;
+        top: 250px;
+        width: 49px;
+        height: 49px;
+        background: $primary;
+        border-radius: 50%;
+        border: none;
+    }
+
+    #discount__right-arrow{
+        margin-left: 40px;
+    }
+
+    #discount__left-arrow{
+        margin-right: 40px;
+        transform: rotate(180deg);
+    }
+
+    .slick-list{
+        padding-top: 42px;
+        overflow: hidden !important;
     }
 }
