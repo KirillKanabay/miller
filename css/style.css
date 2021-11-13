@@ -1041,6 +1041,11 @@ label > input[type="radio"] + * {
         font-size: 18px;
         line-height: 23.4px; } }
 
+@media screen and (min-width: 1280px) {
+  .advantages__image {
+    width: 534px;
+    height: 425px; } }
+
 .roasting {
   padding: 0 18px;
   padding-top: 80px;

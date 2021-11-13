@@ -188,3 +188,12 @@
         }
     }
 }
+
+@media screen and (min-width: 1280px){
+    .advantages{
+        &__image{
+            width: 534px;
+            height: 425px;
+        }
+    }
+}
