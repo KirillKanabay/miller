@@ -89,3 +89,71 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px){
+    .instagram{
+        position: relative;
+        padding: 0 86px;
+        padding-top: 60px;
+        padding-bottom: 160px;
+        overflow: hidden;
+        background:
+            url('../images/instagram/iphone-laptop.png') top 120px left no-repeat,
+            url('../images/instagram/bg-laptop.svg') top 300px center no-repeat,
+            linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%,#fff 50%, #FFF 100%) no-repeat top center;
+            background-size: auto, 100%, auto;
+        
+        &__title-container{
+            display: flex;
+            align-items: center;
+        }
+            &__link {
+                margin-top: 0px;
+                margin-left: 30px;
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    
+        &__photo-list {
+            margin-top: 50px;
+        }
+    
+        &__photo{
+            width: 280px;
+            height: 270px;
+        }
+    
+        &__next-button{
+            margin-top: 32px;
+            width: 80px;
+            height: 80px;
+            img{
+                width: 30px;
+            }
+        }
+
+        &__slider-container{
+            position: relative;
+            right: -250px;
+        }
+
+        &__next-button{
+            top: 420px;
+            right: 36px;
+            width: 49px;
+            height: 49px;
+            position: absolute;
+            transform: rotate(180deg);
+
+            img{
+                width: 18px;
+            }
+        }
+
+        // .slick-slide{
+        //     margin: 20px;
+        // }
+    }
+}

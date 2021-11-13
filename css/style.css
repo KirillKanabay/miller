@@ -1254,6 +1254,48 @@ label > input[type="radio"] + * {
       .instagram__next-button img {
         width: 30px; } }
 
+@media screen and (min-width: 1024px) {
+  .instagram {
+    position: relative;
+    padding: 0 86px;
+    padding-top: 60px;
+    padding-bottom: 160px;
+    overflow: hidden;
+    background: url("../images/instagram/iphone-laptop.png") top 120px left no-repeat, url("../images/instagram/bg-laptop.svg") top 300px center no-repeat, linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
+    background-size: auto, 100%, auto; }
+    .instagram__title-container {
+      display: flex;
+      align-items: center; }
+    .instagram__link {
+      margin-top: 0px;
+      margin-left: 30px; }
+      .instagram__link img {
+        width: 60px;
+        height: 60px; }
+    .instagram__photo-list {
+      margin-top: 50px; }
+    .instagram__photo {
+      width: 280px;
+      height: 270px; }
+    .instagram__next-button {
+      margin-top: 32px;
+      width: 80px;
+      height: 80px; }
+      .instagram__next-button img {
+        width: 30px; }
+    .instagram__slider-container {
+      position: relative;
+      right: -250px; }
+    .instagram__next-button {
+      top: 420px;
+      right: 36px;
+      width: 49px;
+      height: 49px;
+      position: absolute;
+      transform: rotate(180deg); }
+      .instagram__next-button img {
+        width: 18px; } }
+
 .mailing {
   padding: 0 18px; }
   .mailing__image {
