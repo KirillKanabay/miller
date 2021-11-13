@@ -1346,6 +1346,49 @@ label > input[type="radio"] + * {
     .mailing__submit {
       margin-top: 20px; } }
 
+@media screen and (min-width: 1024px) {
+  .mailing {
+    position: relative;
+    padding: 0 68px;
+    padding-right: 0px; }
+    .mailing__image {
+      position: absolute;
+      top: -150px;
+      right: -50px;
+      width: 537px; }
+    .mailing__title {
+      margin-top: 0px;
+      width: 500px; }
+    .mailing__description {
+      margin-top: 40px;
+      font-size: 18px;
+      line-height: 23.4px;
+      width: 500px; }
+    .mailing__form {
+      position: relative;
+      margin-top: 38px;
+      width: 780px;
+      display: flex;
+      align-items: center; }
+      .mailing__form__description {
+        margin-top: 14px;
+        font-size: 12px;
+        line-height: 15.6px; }
+      .mailing__form input {
+        height: 56px;
+        font-size: 18px;
+        line-height: 130%;
+        border-radius: 28px; }
+    .mailing__submit {
+      position: absolute;
+      right: 0;
+      margin-top: 0px;
+      border-radius: 28px !important;
+      width: 179px !important;
+      height: 57px !important;
+      font-size: 18px !important;
+      line-height: 22.28px !important; } }
+
 .footer {
   margin-top: 60px;
   padding-bottom: 50px; }
