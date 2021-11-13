@@ -162,7 +162,7 @@
         }
     
         &__preview{
-            border-radius: 14px 14px 0px 14px;
+            border-radius: 14px 0px 0px 14px;
             width: 183px;
             height: 300px;
         }
@@ -202,5 +202,22 @@
     }
     .carousel-inputs{
         display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .news{
+        &__item{
+            height: 283px;
+            grid-column: span 12;
+            &--previewed{
+                grid-column: span 17;
+            }
+        }
+
+        &__preview{
+            width: 238px;
+            height: 283px;
+        }
     }
 }

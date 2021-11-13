@@ -5,7 +5,7 @@
     background:
         url('../images/instagram/iphone.png') top 49px right -35px no-repeat,
         url('../images/instagram/bg.svg') top 110px center no-repeat,
-        linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%,#fff 50%, #FFF 100%) no-repeat top center;
+        linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
     background-size: auto, 100%, auto;
 
     &__link {
@@ -26,19 +26,20 @@
 
     &__photo-item {
         margin-right: 20px;
+
         &:last-child {
             margin-right: 0;
         }
     }
 
-    &__photo{
+    &__photo {
         width: 160px;
         height: 183px;
         border-radius: 10px;
         object-fit: cover;
     }
 
-    &__next-button{
+    &__next-button {
         display: flex;
         margin-top: 20px;
         align-items: center;
@@ -59,39 +60,41 @@
         background:
             url('../images/instagram/iphone-tablet.png') top 60px right no-repeat,
             url('../images/instagram/bg.svg') top 230px center no-repeat,
-            linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%,#fff 50%, #FFF 100%) no-repeat top center;
-            background-size: auto, 100%, auto;
+            linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
+        background-size: auto, 100%, auto;
+
         &__link {
             margin-top: 40px;
-    
+
             img {
                 width: 81px;
                 height: 81px;
             }
         }
-    
+
         &__photo-list {
             margin-top: 91px;
         }
-    
-        &__photo{
+
+        &__photo {
             width: 340px;
             height: 389px;
         }
-    
-        &__next-button{
+
+        &__next-button {
             margin-top: 32px;
             width: 80px;
             height: 80px;
-            img{
+
+            img {
                 width: 30px;
             }
         }
     }
 }
 
-@media screen and (min-width: 1024px){
-    .instagram{
+@media screen and (min-width: 1024px) {
+    .instagram {
         position: relative;
         padding: 0 86px;
         padding-top: 60px;
@@ -100,46 +103,55 @@
         background:
             url('../images/instagram/iphone-laptop.png') top 120px left no-repeat,
             url('../images/instagram/bg-laptop.svg') top 300px center no-repeat,
-            linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%,#fff 50%, #FFF 100%) no-repeat top center;
-            background-size: auto, 100%, auto;
-        
-        &__title-container{
+            linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
+        background-size: auto, 100%, auto;
+
+        &__photo-list {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(3, 280px);
+            gap: 20px;
+            right: -250px;
+            .slick-list {
+                grid-column: span 3;
+            }
+        }
+
+        &__title-container {
             display: flex;
             align-items: center;
         }
-            &__link {
-                margin-top: 0px;
-                margin-left: 30px;
+
+        &__link {
+            margin-top: 0px;
+            margin-left: 30px;
+
             img {
                 width: 60px;
                 height: 60px;
             }
         }
-    
+
         &__photo-list {
             margin-top: 50px;
         }
-    
-        &__photo{
+
+        &__photo {
             width: 280px;
             height: 270px;
         }
-    
-        &__next-button{
+
+        &__next-button {
             margin-top: 32px;
             width: 80px;
             height: 80px;
-            img{
+
+            img {
                 width: 30px;
             }
         }
 
-        &__slider-container{
-            position: relative;
-            right: -250px;
-        }
-
-        &__next-button{
+        &__next-button {
             top: 420px;
             right: 36px;
             width: 49px;
@@ -147,13 +159,21 @@
             position: absolute;
             transform: rotate(180deg);
 
-            img{
+            img {
                 width: 18px;
             }
         }
+    }
+}
 
-        // .slick-slide{
-        //     margin: 20px;
-        // }
+@media screen and (min-width: 1280px) {
+    .instagram{
+        background:
+        url('../images/instagram/iphone-laptop.png') top 120px left no-repeat,
+        url('../images/instagram/bg-laptop.svg') top 200px center no-repeat,
+        linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
+        &__photo-list {
+            right: -420px;
+        }
     }
 }
