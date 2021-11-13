@@ -87,7 +87,6 @@
             font-weight: 500;
             font-size: 10px;
             line-height: 11.77px;
-            word-wrap: wrap;
         }
 
         &__price {
@@ -260,7 +259,7 @@
         padding: 0 86px;
         margin-bottom: 137px;
         &__description {
-            width: 70%;
+            width: 715px;
             margin-top: 39px;
             font-size: 18px;
             line-height: 23.4px;
@@ -388,5 +387,15 @@
     .slick-list{
         padding-top: 42px;
         overflow: hidden !important;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .discount{
+        margin-top: 30px;
+
+        &__list{
+            grid-template-columns: repeat(3, 280px);
+        }
     }
 }
