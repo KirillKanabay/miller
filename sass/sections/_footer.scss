@@ -65,3 +65,35 @@
         }
     }    
 }
+
+@media screen and (min-width: 1024px) {
+    .footer{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 104px;
+        padding: 0 86px;
+        padding-bottom: 70px;
+        
+        &__navigation{
+            &__item{
+                margin-right: 66px;
+            }
+    
+            &__link{
+                font-size: 18px;
+                line-height: 21.83px;
+            }
+        }
+    
+        &__logo-link{
+            margin-top: 0;
+        }
+    
+        &__logo{
+            width: 180px;
+            height: 80px;
+        }
+    }    
+}

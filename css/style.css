@@ -1349,7 +1349,7 @@ label > input[type="radio"] + * {
 @media screen and (min-width: 1024px) {
   .mailing {
     position: relative;
-    padding: 0 68px;
+    padding: 0 86px;
     padding-right: 0px; }
     .mailing__image {
       position: absolute;
@@ -1430,6 +1430,26 @@ label > input[type="radio"] + * {
     .footer__logo {
       width: 225px;
       height: 102px; } }
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 104px;
+    padding: 0 86px;
+    padding-bottom: 70px; }
+    .footer__navigation__item {
+      margin-right: 66px; }
+    .footer__navigation__link {
+      font-size: 18px;
+      line-height: 21.83px; }
+    .footer__logo-link {
+      margin-top: 0; }
+    .footer__logo {
+      width: 180px;
+      height: 80px; } }
 
 * {
   font-family: "Gilroy", sans-serif;
