@@ -98,7 +98,20 @@
 @media screen and (min-width: 1024px){
     .catalog{
         position: relative;
+        margin-top: 0;
         padding: 0 86px;
+
+        .carousel-container{
+            margin: 0 auto;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(3, 280px);
+            column-gap: 20px;
+
+            .catalog__carousel{
+                grid-column: span 3;
+            }
+        }
 
         &__title{
             margin-left: 0;
@@ -154,11 +167,11 @@
     }
 
     #catalog__left-arrow{
-        left: 18px;
+        left: 10px;
     }
 
     #catalog__right-arrow{
-        right: 18px;
-        transform: rotate(180deg);
+        background: $primary;
+        right: 10px;
     }
 }

@@ -90,6 +90,7 @@
     
     .intro {
         padding: 0 86px;
+        padding-bottom: 200px;
         background: none;
     
         &__slider{
@@ -101,7 +102,7 @@
             font-size: 56px;
             font-weight: 900;
             line-height: 69.89px;
-            width: 70%;
+            width: 400px;
         }
     
         &__description{
@@ -158,4 +159,18 @@
         font-size: 0;
     }
     
+}
+
+@media screen and (min-width: 1280px){
+    .intro {      
+        &__title{
+            width: auto;
+        }
+        &__image{
+            width: 636px;
+            height: 548px;
+            top: 50px;
+            right: 110px;
+        }  
+    }
 }

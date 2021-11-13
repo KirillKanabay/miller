@@ -22,7 +22,11 @@ $('.catalog__carousel').slick({
                 prevArrow: $('#catalog__left-arrow'),
                 nextArrow: $('#catalog__right-arrow')
             }
-        }
+        },
+        {
+            breakpoint: 1279,
+            settings: "unslick",
+        },
       ]
 });
 
