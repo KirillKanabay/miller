@@ -61,6 +61,10 @@
             line-height: 15.6px;
         }
     }
+
+    &__image{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -111,11 +115,35 @@
     .advantages {
         padding: 0 86px;
         padding-top: 47px;
-        padding-bottom: 64px;
+        padding-bottom: 49px;
         background-color: #FFF7E1;
-        background: url("../images/advantages/bg-laptop.svg") center top no-repeat;
+        background: url("../images/advantages/bg-laptop.svg") center top no-repeat,
+                    linear-gradient(
+                        #FFF 0%,
+                        #fff 50%,
+                        #FFF7E1 50%,
+                        #FFF7E1 100%
+                    ) no-repeat center bottom;
         background-size: 100%;
-    
+        
+        &__inner-container{
+            display: flex;
+            align-items: center;
+        }
+
+        &__image{
+            display: block;
+            width: 375px;
+            height: 300px;
+            margin-right: 64px;
+        }
+
+        &__title-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
         &__title {
             width: 400px;
             font-size: 35px;
@@ -123,49 +151,39 @@
         }
     
         &__list {
-            margin-top: 30px;
-            list-style: none;
+            margin-top: 57px;
         }
     
         &__item {
-            margin-bottom: 30px;
-            display: flex;
-            align-items: flex-start;
+            margin-bottom: 40px;
     
             &:last-child {
                 margin-bottom: 0px;
             }
     
             &__icon-container {
-                display: flex;
-                flex-shrink: 0;
-                justify-content: center;
-                align-items: center;
-                width: 40px;
-                height: 40px;
-                background-color: $primary;
-                border-radius: 50%;
+                width: 60px;
+                height: 60px;
             }
     
             &__icon {
-                height: 16px;
+                height: 22px;
             }
     
             &__container {
-                margin-left: 20px;
+                margin-left: 30px;
             }
     
             &__title {
                 font-weight: 700;
-                font-size: 16px;
-                line-height: 19.34px;
+                font-size: 21px;
+                line-height: 25.39px;
             }
     
             &__description {
-                margin-top: 13px;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 15.6px;
+                margin-top: 15px;
+                font-size: 18px;
+                line-height: 23.4px;
             }
         }
     }
