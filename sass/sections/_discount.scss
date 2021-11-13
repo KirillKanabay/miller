@@ -58,7 +58,7 @@
     &__item {
         background: white;
         position: relative;
-        width: 250px;
+        width: 250px !important;
         border-radius: 12px;
         box-shadow: 0px 0px 12.5px rgba(146, 146, 146, 0.25);
         padding: 60px 26px 30px 24px;
@@ -126,7 +126,8 @@
 
     &__all-link{
         display: none;
-        margin-top: 7px;
+        margin-top: 10px;
+        width: 100px;
         color: $black;
         font-weight: 500;
         font-size: 14px;
@@ -186,7 +187,7 @@
         }
 
         &__item {
-            width: 340px;
+            width: 340px !important;
             border-radius: 16px;
             box-shadow: 0px 0px 17.0069px rgba(146, 146, 146, 0.25);
             padding: 83px 38px 42px 35px;
@@ -290,7 +291,7 @@
         }
 
         &__item {
-            width: 280px;
+            width: 280px !important;
             border-radius: 14px;
             box-shadow: 0px 0px 20px rgba(201, 201, 201, 0.25);
             padding: 66px 25px 37px 25px;

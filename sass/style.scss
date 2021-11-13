@@ -101,6 +101,10 @@ b {
     line-height: 25px;
 }
 
+main{
+    overflow: hidden;
+}
+
 @media screen and (min-width: 768px){
     .logo{
         width: 225px;

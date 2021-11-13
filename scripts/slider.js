@@ -4,6 +4,7 @@ $('.catalog__carousel').slick({
     arrows: false,
     centerMode: true,
     variableWidth: true,
+    adaptiveHeigth: true,
     mobileFirst:true,
     responsive: [
         {
@@ -85,7 +86,6 @@ $('.instagram__photo-list').slick({
             // settings: "unslick",
             settings: {
                 rows: 2,
-                slidesPerRow: 1,
                 slidesToShow: 3,
                 prevArrow: null,
                 nextArrow: $('#change-inst-photo-btn'),
