@@ -643,29 +643,7 @@ label > input[type="radio"] + * {
     .catalog .carousel-container .catalog__carousel {
       display: grid;
       grid-template-columns: repeat(4, 280px);
-      gap: 20px; }
-  .catalog__title {
-    margin-left: 0; }
-  .catalog .slick-list {
-    padding-bottom: 30px !important; }
-  .catalog__slide {
-    height: 381px;
-    width: 280px !important;
-    border-radius: 14px;
-    padding: 50px 23px 46px 23px; }
-    .catalog__slide__image {
-      height: 50%; }
-    .catalog__slide__title {
-      line-height: 21.76px;
-      font-size: 18px;
-      text-align: center; }
-    .catalog__slide__button {
-      height: 42px !important;
-      font-size: 18px !important;
-      line-height: 21.76px !important; }
-  #catalog__left-arrow,
-  #catalog__right-arrow {
-    display: none; } }
+      gap: 20px; } }
 
 .discount {
   display: flex;

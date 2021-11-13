@@ -178,7 +178,6 @@
 
 @media screen and (min-width: 1280px){
     .catalog{
-
         .carousel-container{
             margin-top: 62px;
             display: block;
@@ -188,51 +187,5 @@
                 gap: 20px;
             }
         }
-
-        &__title{
-            margin-left: 0;
-        }
-
-        .slick-list{
-            padding-bottom: 30px !important;
-        }
-        // &__carousel{
-        //     display: grid;
-        //     grid-template-columns: repeat(4, 1fr);
-        //     padding-top: 62px !important;
-        //     padding-bottom: 30px !important;
-        // }
-
-        // .carousel-item div{
-            
-        // }
-
-        &__slide{
-            height: 381px;
-            width: 280px !important;
-            border-radius: 14px;  
-            padding: 50px 23px 46px 23px;  
-            &__image{
-                height: 50%;
-            }
-    
-            &__title{
-                line-height: 21.76px;
-                font-size: 18px;
-                text-align: center;
-            }
-    
-            &__button{
-                height: 42px !important;
-                font-size: 18px !important;
-                line-height: 21.76px !important;
-            }
-        }
-    }
-    
-
-    #catalog__left-arrow,
-    #catalog__right-arrow{
-        display: none;
     }
 }
