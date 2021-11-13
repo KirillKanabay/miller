@@ -1,7 +1,7 @@
 .roasting{
     padding: 0 18px;
     padding-top: 80px;
-    background: url("../images/advantages/bg-bottom.svg") center top no-repeat,
+    background: url("../images/advantages/bg-bottom.svg") center top -2px no-repeat,
                 url("../images/roasting/bg-bottom.svg") center bottom 7px no-repeat,
                 url("../images/roasting/bg-center.png") center bottom 23px no-repeat;
     background-size: 100%;
@@ -48,4 +48,39 @@
             margin-top: 93px;
         }
     }    
+}
+
+@media screen and (min-width: 1024px) {
+    .roasting{
+        padding: 0 84px;
+        padding-top: 157px;
+        padding-bottom: 112px;
+        background: url("../images/roasting/bg-top-laptop.svg") center top -2px no-repeat,
+                    url("../images/roasting/bg-bottom-laptop.svg") center bottom 20px no-repeat,
+                    url("../images/roasting/bg-center-laptop.png") center bottom 23px no-repeat;
+    
+        &__title{
+            margin-bottom: 69px;
+        }
+    
+        &__description{
+            font-size: 18px;
+            line-height: 23.4px;
+            margin-bottom: 23.4px;
+            
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    
+        &__button{
+            margin-top: 70px;
+            width: 283px !important;
+            height: 56px !important;
+
+            font-size: 21px !important;
+            line-height: 25.39px;
+        }
+    }
+    
 }
