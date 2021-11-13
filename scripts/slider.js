@@ -48,7 +48,14 @@ $('.news__list').slick({
     infinite: true,
     arrows: true,
     prevArrow: $('#left-arrow'),
-    nextArrow: $('#right-arrow')
+    nextArrow: $('#right-arrow'),
+    mobileFirst: true,
+    responsive:[
+        {
+            breakpoint: 1023,
+            settings:"unslick"
+        }
+    ]
 });
 
 $('.instagram__photo-list').slick({
