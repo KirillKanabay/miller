@@ -1457,6 +1457,10 @@ label > input[type="radio"] + * {
       font-size: 18px !important;
       line-height: 22.28px !important; } }
 
+@media screen and (min-width: 1280px) {
+  .mailing__title {
+    width: auto; } }
+
 .footer {
   margin-top: 60px;
   padding-bottom: 50px; }

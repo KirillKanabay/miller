@@ -137,3 +137,11 @@
         }
     }
 }
+
+@media screen and (min-width: 1280px) {
+    .mailing{
+        &__title{
+            width: auto;
+        }
+    }
+}
