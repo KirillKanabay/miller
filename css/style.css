@@ -959,7 +959,7 @@ label > input[type="radio"] + * {
 @media screen and (min-width: 1024px) {
   .advantages {
     padding: 0 86px;
-    padding-top: 47px;
+    padding-top: 59px;
     padding-bottom: 49px;
     background-color: #FFF7E1;
     background: url("../images/advantages/bg-laptop.svg") center top no-repeat, linear-gradient(#FFF 0%, #fff 50%, #FFF7E1 50%, #FFF7E1 100%) no-repeat center bottom;
