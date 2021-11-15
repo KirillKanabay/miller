@@ -178,9 +178,15 @@
 
 @media screen and (min-width: 1280px){
     .catalog{
+        padding: 0;
+        &__title{
+            margin-left: 86px;
+        }
         .carousel-container{
             margin-top: 62px;
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             .catalog__carousel{
                 display: grid;
                 grid-template-columns: repeat(4, 280px);

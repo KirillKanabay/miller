@@ -1,3 +1,16 @@
+.button {
+  transition: background-color 0.3s ease-out; }
+  .button:hover {
+    background-color: #E2A300; }
+
+.header__link:hover {
+  padding-bottom: 7px;
+  border-bottom: 2px solid #F9B300; }
+
+.footer__navigation__link:hover {
+  padding-bottom: 7px;
+  border-bottom: 2px solid #F9B300; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -86,11 +99,10 @@
     .header #open-menu-mobile-button {
       display: none; } }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1920px) {
   .header {
     padding: 10px 120px 0px 120px;
-    height: 113px;
-    box-shadow: none; }
+    height: 113px; }
     .header__link-icon-item {
       margin-right: 40px; }
     .header__logo {
@@ -572,6 +584,16 @@ label > input[type="radio"] + * {
     top: 50px;
     right: 110px; } }
 
+@media screen and (min-width: 1920px) {
+  .intro__title {
+    font-size: 80px;
+    line-height: 100px; }
+  .intro__image {
+    width: 636px;
+    height: 548px;
+    top: 50px;
+    right: 110px; } }
+
 .catalog {
   position: relative;
   margin-top: 70px; }
@@ -682,13 +704,19 @@ label > input[type="radio"] + * {
     right: 10px; } }
 
 @media screen and (min-width: 1280px) {
-  .catalog .carousel-container {
-    margin-top: 62px;
-    display: block; }
-    .catalog .carousel-container .catalog__carousel {
-      display: grid;
-      grid-template-columns: repeat(4, 280px);
-      gap: 20px; }
+  .catalog {
+    padding: 0; }
+    .catalog__title {
+      margin-left: 86px; }
+    .catalog .carousel-container {
+      margin-top: 62px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .catalog .carousel-container .catalog__carousel {
+        display: grid;
+        grid-template-columns: repeat(4, 280px);
+        gap: 20px; }
   #catalog__left-arrow,
   #catalog__right-arrow {
     display: none; } }
@@ -1131,7 +1159,8 @@ label > input[type="radio"] + * {
     padding: 0 84px;
     padding-top: 157px;
     padding-bottom: 112px;
-    background: url("../images/roasting/bg-top-laptop.svg") center top -2px no-repeat, url("../images/roasting/bg-bottom-laptop.svg") center bottom 20px no-repeat, url("../images/roasting/bg-center-laptop.png") center bottom 23px no-repeat; }
+    background: url("../images/roasting/bg-top-laptop.svg") center top -2px no-repeat, url("../images/roasting/bg-bottom-laptop.svg") center bottom 20px no-repeat, url("../images/roasting/bg-center-laptop.png") center bottom 23px no-repeat;
+    background-size: 100%; }
     .roasting__title {
       margin-bottom: 69px; }
     .roasting__description {
@@ -1287,14 +1316,16 @@ label > input[type="radio"] + * {
     display: none; } }
 
 @media screen and (min-width: 1280px) {
-  .news__item {
-    height: 283px;
-    grid-column: span 12; }
-    .news__item--previewed {
-      grid-column: span 17; }
-  .news__preview {
-    width: 238px;
-    height: 283px; } }
+  .news {
+    background-size: 100%; }
+    .news__item {
+      height: 283px;
+      grid-column: span 12; }
+      .news__item--previewed {
+        grid-column: span 17; }
+    .news__preview {
+      width: 238px;
+      height: 283px; } }
 
 .instagram {
   padding: 0 18px;
@@ -1403,11 +1434,30 @@ label > input[type="radio"] + * {
       .instagram__next-button img {
         width: 18px; } }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1160px) {
   .instagram {
     background: url("../images/instagram/iphone-laptop.png") top 120px left no-repeat, url("../images/instagram/bg-laptop.svg") top 200px center no-repeat, linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center; }
     .instagram__photo-list {
+      right: -220px; } }
+
+@media screen and (min-width: 1280px) {
+  .instagram {
+    background: url("../images/instagram/iphone-laptop.png") top 120px left no-repeat, url("../images/instagram/bg-laptop.svg") top 200px center no-repeat, linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
+    background-size: auto, 100%, auto; }
+    .instagram__photo-list {
       right: -420px; } }
+
+@media screen and (min-width: 1330px) {
+  .instagram {
+    background: url("../images/instagram/iphone-laptop.png") top 120px left no-repeat, url("../images/instagram/bg-desktop.svg") top 150px center no-repeat, linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
+    background-size: auto, 100%, auto; } }
+
+@media screen and (min-width: 1440px) {
+  .instagram {
+    background: url("../images/instagram/iphone-laptop.png") top 120px left no-repeat, url("../images/instagram/bg-desktop.svg") top 110px center no-repeat, linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
+    background-size: auto, 100%, auto; }
+    .instagram__photo-list {
+      right: -620px; } }
 
 .mailing {
   padding: 0 18px; }
@@ -1494,7 +1544,7 @@ label > input[type="radio"] + * {
         border-radius: 28px; }
     .mailing__submit {
       position: absolute;
-      right: 0;
+      right: -2px;
       margin-top: 0px;
       border-radius: 28px !important;
       width: 179px !important;

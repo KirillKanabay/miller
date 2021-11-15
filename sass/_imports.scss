@@ -1,8 +1,10 @@
 //Import variables
 @import './_variables.scss';
 
+
 //Import blocks file
 
+@import './blocks/_effects.scss';
 @import './blocks/_header.scss';
 @import './blocks/_mobile-menu.scss';
 @import './blocks/_slider.scss';

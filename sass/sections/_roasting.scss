@@ -58,7 +58,8 @@
         background: url("../images/roasting/bg-top-laptop.svg") center top -2px no-repeat,
                     url("../images/roasting/bg-bottom-laptop.svg") center bottom 20px no-repeat,
                     url("../images/roasting/bg-center-laptop.png") center bottom 23px no-repeat;
-    
+        
+        background-size: 100%;
         &__title{
             margin-bottom: 69px;
         }

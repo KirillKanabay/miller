@@ -207,6 +207,7 @@
 
 @media screen and (min-width: 1280px) {
     .news{
+        background-size: 100%;
         &__item{
             height: 283px;
             grid-column: span 12;

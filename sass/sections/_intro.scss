@@ -174,3 +174,18 @@
         }  
     }
 }
+
+@media screen and (min-width: 1920px) {
+    .intro {      
+        &__title{
+            font-size: 80px;
+            line-height: 100px;
+        }
+        &__image{
+            width: 636px;
+            height: 548px;
+            top: 50px;
+            right: 110px;
+        }  
+    }
+}

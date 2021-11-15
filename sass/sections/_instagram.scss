@@ -166,14 +166,52 @@
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1160px) {
     .instagram{
         background:
         url('../images/instagram/iphone-laptop.png') top 120px left no-repeat,
         url('../images/instagram/bg-laptop.svg') top 200px center no-repeat,
         linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
         &__photo-list {
+            right: -220px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .instagram{
+        background:
+        url('../images/instagram/iphone-laptop.png') top 120px left no-repeat,
+        url('../images/instagram/bg-laptop.svg') top 200px center no-repeat,
+        linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
+        background-size: auto, 100%, auto;
+        &__photo-list {
             right: -420px;
+        }
+    }
+}
+
+@media screen and (min-width: 1330px) {
+    .instagram{
+        background:
+        url('../images/instagram/iphone-laptop.png') top 120px left no-repeat,
+        url('../images/instagram/bg-desktop.svg') top 150px center no-repeat,
+        linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
+
+        background-size: auto, 100%, auto;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .instagram{
+        background:
+        url('../images/instagram/iphone-laptop.png') top 120px left no-repeat,
+        url('../images/instagram/bg-desktop.svg') top 110px center no-repeat,
+        linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
+
+        background-size: auto, 100%, auto;
+        &__photo-list {
+            right: -620px;
         }
     }
 }
