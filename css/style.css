@@ -883,7 +883,7 @@ label > input[type="radio"] + * {
     font-weight: 500;
     font-size: 14px;
     line-height: 16.48px; }
-  .discount .weight-select {
+  .discount .custom-select {
     position: absolute;
     top: 14px;
     right: 24px; }
@@ -951,14 +951,26 @@ label > input[type="radio"] + * {
         font-size: 16px !important;
         line-height: 19.43px !important;
         width: 149px !important; }
-    .discount .weight-select {
+    .discount .custom-select {
       top: 21px;
       right: 33px;
       width: 110px;
-      height: 30px;
-      font-size: 16px;
-      line-height: 18.83px;
-      padding: 6px 20px; }
+      height: 30px; }
+      .discount .custom-select .select-selected {
+        padding: 6px 20px;
+        font-size: 16px;
+        line-height: 18.83px; }
+      .discount .custom-select .select-selected::after {
+        content: url(../images/select-down-icon-table.svg);
+        right: 30px; }
+      .discount .custom-select .select-arrow-active:after {
+        top: 25px;
+        right: 20px; }
+      .discount .custom-select .select-items {
+        top: 38px; }
+      .discount .custom-select .select-items div {
+        font-size: 16px;
+        line-height: 18.83px; }
     .discount .slick-list {
       padding-top: 80px; } }
 
@@ -1026,14 +1038,26 @@ label > input[type="radio"] + * {
     .discount__slider-container {
       display: flex;
       align-items: center; }
-    .discount .weight-select {
+    .discount .custom-select {
       top: 14px;
       right: 25px;
       width: 93px;
-      height: 23px;
-      font-size: 12px;
-      line-height: 14px;
-      padding: 4px 19px; }
+      height: 23px; }
+      .discount .custom-select .select-selected {
+        padding: 4px 19px;
+        font-size: 12px;
+        line-height: 14px; }
+      .discount .custom-select .select-selected::after {
+        content: url(../images/select-down-icon.svg);
+        right: 30px; }
+      .discount .custom-select .select-arrow-active:after {
+        top: 20px;
+        right: 20px; }
+      .discount .custom-select .select-items {
+        top: 31px; }
+      .discount .custom-select .select-items div {
+        font-size: 12px;
+        line-height: 14px; }
     .discount .slick-list {
       padding-top: 54px; }
     .discount__all-link {
