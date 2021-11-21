@@ -40,6 +40,9 @@
   .header__link-list {
     display: none; }
 
+#search-button {
+  cursor: pointer; }
+
 #open-menu-mobile-button {
   margin-right: 21px; }
 
