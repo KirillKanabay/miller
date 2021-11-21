@@ -52,6 +52,16 @@
     }
 }
 
+@media screen and (min-width: 410px){
+    .instagram{
+        background:
+            url('../images/instagram/iphone.png') top 49px right -35px no-repeat,
+            url('../images/instagram/bg.svg') top 100px center no-repeat,
+            linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
+        background-size: auto, 100%, auto;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .instagram {
         padding: 0 35px;

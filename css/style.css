@@ -7,6 +7,12 @@
   padding-bottom: 7px;
   border-bottom: 2px solid #F9B300; }
 
+.continue-link:hover,
+.all-link:hover {
+  background-color: #F9F9F9;
+  border-radius: 30px;
+  color: #F9B300; }
+
 .footer__navigation__link:hover {
   padding-bottom: 7px;
   border-bottom: 2px solid #F9B300; }
@@ -980,6 +986,9 @@ label > input[type="radio"] + * {
     margin-bottom: 0px !important;
     padding: 0 86px;
     margin-bottom: 137px; }
+    .discount__all-link {
+      padding: 5px 17px;
+      width: 125px; }
     .discount__description {
       width: 715px;
       margin-top: 39px;
@@ -1291,7 +1300,7 @@ label > input[type="radio"] + * {
       margin-bottom: 0; }
   .news__continue-link {
     display: flex;
-    margin-top: 43px;
+    margin-top: 38px;
     color: #F9B300;
     text-decoration: none;
     align-items: center; }
@@ -1300,6 +1309,8 @@ label > input[type="radio"] + * {
       font-weight: 500;
       font-size: 16px;
       line-height: 19px; }
+    .news__continue-link img {
+      height: 8px; }
   .news__all-link {
     display: block;
     margin-top: 30px;
@@ -1335,6 +1346,8 @@ label > input[type="radio"] + * {
         margin-right: 20px;
         font-size: 25px;
         line-height: 29px; }
+      .news__continue-link img {
+        height: 13px; }
     .news__all-link {
       margin-top: 50px;
       font-size: 25px;
@@ -1384,12 +1397,20 @@ label > input[type="radio"] + * {
       line-height: 130%;
       margin-bottom: 18px; }
     .news__continue-link {
-      margin-top: 30px; }
+      margin-top: 25px;
+      margin-left: -10px;
+      padding: 5px 12px;
+      width: 120px; }
       .news__continue-link span {
         font-size: 14px;
-        line-height: 17px; }
+        line-height: 17px;
+        margin-right: 8px; }
+      .news__continue-link img {
+        height: 7px; }
     .news__all-link {
       position: absolute;
+      padding: 5px 17px;
+      width: 130px;
       top: 15px;
       right: 86px;
       margin-top: 0;
@@ -1401,6 +1422,7 @@ label > input[type="radio"] + * {
 
 @media screen and (min-width: 1280px) {
   .news {
+    background: url("../images/news/top-bg-laptop.svg") no-repeat top 35px center, linear-gradient(to left, #FFF7E1, #FFF7E1) no-repeat top 235px center;
     background-size: 100%; }
     .news__item {
       height: 283px;
@@ -1446,6 +1468,11 @@ label > input[type="radio"] + * {
     height: 40px;
     border-radius: 50%;
     border: none; }
+
+@media screen and (min-width: 410px) {
+  .instagram {
+    background: url("../images/instagram/iphone.png") top 49px right -35px no-repeat, url("../images/instagram/bg.svg") top 100px center no-repeat, linear-gradient(to bottom, #FFF7E1 0%, #FFF7E1 50%, #fff 50%, #FFF 100%) no-repeat top center;
+    background-size: auto, 100%, auto; } }
 
 @media screen and (min-width: 768px) {
   .instagram {
