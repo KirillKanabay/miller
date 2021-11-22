@@ -9,7 +9,7 @@
     }
     
     &__title{
-        margin-top: 60px;
+        margin-top: 130px;
         font-size: 30px;
         font-weight: 900;
         line-height: 37px;
@@ -31,7 +31,7 @@
     &__image{
         height: 378px;
         position: absolute;
-        top: 170px;
+        top: 240px;
         right: -140px;
     }
 
@@ -48,10 +48,10 @@
     .intro{
         padding: 0 35px;
 
-        background: url("/images/bg-1-tablet.svg") right top -90px no-repeat;
+        background: url("../images/bg-1-tablet.svg") right top -90px no-repeat;
 
         &__title{
-            margin-top: 130px;
+            margin-top: 273px;
             font-size: 50px;
             line-height: 62.4px;
             width: 70%;
@@ -72,7 +72,7 @@
         &__image{
             height: 615px;
             position: absolute;
-            top: 230px;
+            top: 347px;
             right: -110px;
         }
     
